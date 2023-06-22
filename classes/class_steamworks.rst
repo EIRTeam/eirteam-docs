@@ -12,9 +12,7 @@ Steamworks
 
 **Inherits:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-.. container:: contribute
-
-	There is currently no description for this class. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+Base singleton to interact with the Steamworks API.
 
 .. rst-class:: classref-reftable-group
 
@@ -24,13 +22,15 @@ Methods
 .. table::
    :widths: auto
 
-   +-----------------------------------------+------------------------------------------------------------------------------------+
-   | :ref:`HBSteamInput<class_HBSteamInput>` | :ref:`get_input<class_Steamworks_method_get_input>` **(** **)** |const|            |
-   +-----------------------------------------+------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                 | :ref:`init<class_Steamworks_method_init>` **(** :ref:`int<class_int>` app_id **)** |
-   +-----------------------------------------+------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                 | :ref:`is_valid<class_Steamworks_method_is_valid>` **(** **)** |const|              |
-   +-----------------------------------------+------------------------------------------------------------------------------------+
+   +-----------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`HBSteamInput<class_HBSteamInput>` | :ref:`get_input<class_Steamworks_method_get_input>` **(** **)** |const|                                                                      |
+   +-----------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                 | :ref:`init<class_Steamworks_method_init>` **(** :ref:`int<class_int>` app_id, :ref:`bool<class_bool>` run_callbacks_automatically=true **)** |
+   +-----------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                 | :ref:`is_valid<class_Steamworks_method_is_valid>` **(** **)** |const|                                                                        |
+   +-----------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                    | :ref:`run_callbacks<class_Steamworks_method_run_callbacks>` **(** **)**                                                                      |
+   +-----------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -47,9 +47,7 @@ Method Descriptions
 
 :ref:`HBSteamInput<class_HBSteamInput>` **get_input** **(** **)** |const|
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+Returns the Steam Input interface.
 
 .. rst-class:: classref-item-separator
 
@@ -59,11 +57,15 @@ Method Descriptions
 
 .. rst-class:: classref-method
 
-:ref:`bool<class_bool>` **init** **(** :ref:`int<class_int>` app_id **)**
+:ref:`bool<class_bool>` **init** **(** :ref:`int<class_int>` app_id, :ref:`bool<class_bool>` run_callbacks_automatically=true **)**
 
-.. container:: contribute
+Initializes Steamworks with the given App ID.
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+Initializes Steam Input, if ``run_callbacks_automatically`` is ``true`` then you don't have to call :ref:`run_callbacks<class_Steamworks_method_run_callbacks>` manually.
+
+
+
+Returns ``True if initialization was successful.``
 
 .. rst-class:: classref-item-separator
 
@@ -75,9 +77,19 @@ Method Descriptions
 
 :ref:`bool<class_bool>` **is_valid** **(** **)** |const|
 
-.. container:: contribute
+Returns ``true`` if Steamworks was initialized properly.
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Steamworks_method_run_callbacks:
+
+.. rst-class:: classref-method
+
+void **run_callbacks** **(** **)**
+
+Dispatches callbacks and call results to all of the connected signals.
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
