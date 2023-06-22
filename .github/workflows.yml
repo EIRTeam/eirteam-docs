@@ -1,0 +1,67 @@
+name: Sync Class Reference
+
+on:
+  workflow_dispatch:
+  # Scheduled updates only run on the default/master branch.
+
+# Make sure jobs cannot overlap.
+concurrency:
+  group: classref-sync-ci-master
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Update class reference files based on the engine revision
+    runs-on: ubuntu-latest
+    env:
+      engine_rev: 'swansong'
+
+    steps:
+      - name: Checkout the documentation repository
+        uses: actions/checkout@v3
+
+      - name: Checkout the engine repository
+        uses: actions/checkout@v3
+        with:
+          repository: 'EIRTeam/godot'
+          # Use the appropriate branch for the documentation version.
+          ref: ${{ env.engine_rev }}
+          path: './.engine-src'
+
+      - name: Update submodules
+        run: |
+          git submodule update --init --recursive
+      - name: Store the engine revision
+        id: 'engine'
+        run: |
+          cd ./.engine-src
+          hash=$(git rev-parse HEAD)
+          hash_short=$(git rev-parse --short HEAD)
+          echo "Checked out EIRTeam/godot at $hash"
+          echo "rev_hash=$hash" >> $GITHUB_OUTPUT
+          echo "rev_hash_short=$hash_short" >> $GITHUB_OUTPUT
+
+      - name: Remove old documentation
+        run: |
+          rm ./classes/class_*.rst
+
+      - name: Build new documentation
+        run: |
+          python docs.py --generate-docs "classes" --godot-path "./.engine-src"
+
+      - name: Submit a pull-request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: 'classref: Sync with current ${{ env.engine_rev }} branch (${{ steps.engine.outputs.rev_hash_short }})'
+          branch: 'classref/sync-${{ steps.engine.outputs.rev_hash_short }}'
+          add-paths: './classes'
+          delete-branch: true
+
+          # Configure the commit author.
+          author: 'EIRTeam <noreply@eirteam.moe>'
+          committer: 'EIRTeam <noreply@eirteam.moe>'
+
+          # Configure the pull-request.
+          title: 'classref: Sync with current ${{ env.engine_rev }} branch (${{ steps.engine.outputs.rev_hash_short }})'
+          body: 'Update Godot API online class reference to match the engine at https://github.com/EIRTeam/godot/commit/${{ steps.engine.outputs.rev_hash }} (`${{ env.engine_rev }}`).'
+          labels: 'area:class reference,bug,enhancement'
