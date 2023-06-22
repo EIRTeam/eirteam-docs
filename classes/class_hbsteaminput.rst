@@ -12,9 +12,7 @@ HBSteamInput
 
 **Inherits:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-.. container:: contribute
-
-	There is currently no description for this class. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+Class to interact with Steam Input.
 
 .. rst-class:: classref-reftable-group
 
@@ -24,9 +22,11 @@ Methods
 .. table::
    :widths: auto
 
-   +------+---------------------------------------------------------+
-   | void | :ref:`init<class_HBSteamInput_method_init>` **(** **)** |
-   +------+---------------------------------------------------------+
+   +------+-------------------------------------------------------------------------------------------------------------------+
+   | void | :ref:`init<class_HBSteamInput_method_init>` **(** :ref:`bool<class_bool>` call_run_frame_automatically=true **)** |
+   +------+-------------------------------------------------------------------------------------------------------------------+
+   | void | :ref:`run_frame<class_HBSteamInput_method_run_frame>` **(** **)**                                                 |
+   +------+-------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -41,11 +41,21 @@ Method Descriptions
 
 .. rst-class:: classref-method
 
-void **init** **(** **)**
+void **init** **(** :ref:`bool<class_bool>` call_run_frame_automatically=true **)**
 
-.. container:: contribute
+Initializes Steam Input, if ``call_run_frame_automatically`` is ``true`` then you don't have to call :ref:`run_frame<class_HBSteamInput_method_run_frame>` manually.
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_HBSteamInput_method_run_frame:
+
+.. rst-class:: classref-method
+
+void **run_frame** **(** **)**
+
+Runs Steam input frame.
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`

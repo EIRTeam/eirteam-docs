@@ -5,7 +5,7 @@
 
 .. _eirteam_api:
 
-EIRTeam Module API
+EIRTeam Godot Modules API
 ==================
 
 This is a list of all classes provided by EIRTeam modules.
@@ -19,15 +19,4 @@ Steamworks
 
     class_steamworks.rst
     class_hbsteaminput.rst
-
-Input Glyphs
-============
-
-.. toctree::
-    :maxdepth: 1
-    :name: toc-module-input_glyphs
-
-    class_hbinputglyphssingleton.rst
-    class_hbinputglyphicon.rst
-    class_hbinputactionglyph.rst
 
