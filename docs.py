@@ -85,8 +85,11 @@ if __name__ == "__main__":
             f.write("\n")
             for module in modules:
                 classes = []
+                module_config_path = os.path.join(godot_path, f"modules/{module['internal_name']}/config.py")
+                if not os.path.exists(module_config_path):
+                    continue
 
-                config_spec = importlib.util.spec_from_file_location(module["internal_name"], os.path.join(godot_path, f"modules/{module['internal_name']}/config.py"))
+                config_spec = importlib.util.spec_from_file_location(module["internal_name"], module_config_path)
                 module_config = importlib.util.module_from_spec(config_spec)
                 config_spec.loader.exec_module(module_config)
                 classes = module_config.get_doc_classes()

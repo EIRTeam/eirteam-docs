@@ -30,6 +30,7 @@ jobs:
 
       - name: Update submodules
         run: |
+          cd ./.engine-src
           git submodule update --init --recursive
       - name: Store the engine revision
         id: 'engine'
