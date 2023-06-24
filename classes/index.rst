@@ -27,7 +27,7 @@ Input Glyphs
     :maxdepth: 1
     :name: toc-module-input_glyphs
 
-    class_hbinputglyphssingleton.rst
-    class_hbinputglyphicon.rst
-    class_hbinputactionglyph.rst
+    class_inputglyphssingleton.rst
+    class_inputglyphtexturerect.rst
+    class_inputactionglyph.rst
 
