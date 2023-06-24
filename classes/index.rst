@@ -20,3 +20,14 @@ Steamworks
     class_steamworks.rst
     class_hbsteaminput.rst
 
+Input Glyphs
+============
+
+.. toctree::
+    :maxdepth: 1
+    :name: toc-module-input_glyphs
+
+    class_hbinputglyphssingleton.rst
+    class_hbinputglyphicon.rst
+    class_hbinputactionglyph.rst
+

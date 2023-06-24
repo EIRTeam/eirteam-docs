@@ -65,7 +65,7 @@ Initializes Steam Input, if ``run_callbacks_automatically`` is ``true`` then you
 
 
 
-Returns ``True if initialization was successful.``
+Returns ``true`` if initialization was successful.
 
 .. rst-class:: classref-item-separator
 
