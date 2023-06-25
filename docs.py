@@ -79,7 +79,7 @@ if __name__ == "__main__":
             f.write(".. _eirteam_api:\n")
             f.write("\n")
             f.write("EIRTeam Godot Modules API\n")
-            f.write("==================\n")
+            f.write("=========================\n")
             f.write("\n")
             f.write("This is a list of all classes provided by EIRTeam modules.\n")
             f.write("\n")
