@@ -25,6 +25,8 @@ Methods
    +-----------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`HBSteamInput<class_HBSteamInput>` | :ref:`get_input<class_Steamworks_method_get_input>` **(** **)** |const|                                                                      |
    +-----------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`             | :ref:`get_last_error<class_Steamworks_method_get_last_error>` **(** **)** |static|                                                           |
+   +-----------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                 | :ref:`init<class_Steamworks_method_init>` **(** :ref:`int<class_int>` app_id, :ref:`bool<class_bool>` run_callbacks_automatically=true **)** |
    +-----------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                 | :ref:`is_valid<class_Steamworks_method_is_valid>` **(** **)** |const|                                                                        |
@@ -48,6 +50,18 @@ Method Descriptions
 :ref:`HBSteamInput<class_HBSteamInput>` **get_input** **(** **)** |const|
 
 Returns the Steam Input interface.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Steamworks_method_get_last_error:
+
+.. rst-class:: classref-method
+
+:ref:`String<class_String>` **get_last_error** **(** **)** |static|
+
+Returns the last error that ocurred.
 
 .. rst-class:: classref-item-separator
 
