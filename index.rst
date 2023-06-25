@@ -7,6 +7,14 @@ these are a set of open source modules used in various production games such as 
 The table of contents in the sidebar should let you easily access the documentation
 for your topic of interest. You can also use the search function in the top-left corner.
 
+Repositories
+------------
+
+You can find the repositories for each module here:
+
+- `EIRTeam.Steamworks <https://github.com/EIRTeam/EIRTeam.Steamworks>`_
+- `EIRTeam.InputGlyphs <https://github.com/EIRTeam/EIRTeam.InputGlyphs>`_
+
 Supporting development
 ----------------------
 
