@@ -18,6 +18,18 @@ InputGlyphsSingleton
 
 .. rst-class:: classref-reftable-group
 
+Properties
+----------
+
+.. table::
+   :widths: auto
+
+   +-----------------------------------------------------------+---------------------------------------------------------------------------------+
+   | :ref:`HBInputType<enum_InputGlyphsSingleton_HBInputType>` | :ref:`forced_input_type<class_InputGlyphsSingleton_property_forced_input_type>` |
+   +-----------------------------------------------------------+---------------------------------------------------------------------------------+
+
+.. rst-class:: classref-reftable-group
+
 Methods
 -------
 
@@ -503,6 +515,30 @@ Large glyph size, usually 256x256.
 :ref:`HBInputGlyphSize<enum_InputGlyphsSingleton_HBInputGlyphSize>` **GLYPH_SIZE_MAX** = ``3``
 
 
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Property Descriptions
+---------------------
+
+.. _class_InputGlyphsSingleton_property_forced_input_type:
+
+.. rst-class:: classref-property
+
+:ref:`HBInputType<enum_InputGlyphsSingleton_HBInputType>` **forced_input_type**
+
+.. rst-class:: classref-property-setget
+
+- void **set_forced_input_type** **(** :ref:`HBInputType<enum_InputGlyphsSingleton_HBInputType>` value **)**
+- :ref:`HBInputType<enum_InputGlyphsSingleton_HBInputType>` **get_forced_input_type** **(** **)**
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
 
 .. rst-class:: classref-section-separator
 
