@@ -40,6 +40,7 @@ It helps me pay the bills :P
    :name: sec-input-glyphs
 
    documentation/input_glyphs/input_glyphs_getting_started
+   documentation/input_glyphs/input_glyph_styling
 
 .. toctree::
    :hidden:

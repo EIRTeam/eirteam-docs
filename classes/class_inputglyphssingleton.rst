@@ -24,9 +24,9 @@ Properties
 .. table::
    :widths: auto
 
-   +-----------------------------------------------------------+---------------------------------------------------------------------------------+
-   | :ref:`HBInputType<enum_InputGlyphsSingleton_HBInputType>` | :ref:`forced_input_type<class_InputGlyphsSingleton_property_forced_input_type>` |
-   +-----------------------------------------------------------+---------------------------------------------------------------------------------+
+   +-------------------------------------------------------+---------------------------------------------------------------------------------+
+   | :ref:`InputType<enum_InputGlyphsSingleton_InputType>` | :ref:`forced_input_type<class_InputGlyphsSingleton_property_forced_input_type>` |
+   +-------------------------------------------------------+---------------------------------------------------------------------------------+
 
 .. rst-class:: classref-reftable-group
 
@@ -36,15 +36,17 @@ Methods
 .. table::
    :widths: auto
 
-   +---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>`                             | :ref:`get_glyph_texture<class_InputGlyphsSingleton_method_get_glyph_texture>` **(** :ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` input_origin, :ref:`int<class_int>` style, :ref:`HBInputGlyphSize<enum_InputGlyphsSingleton_HBInputGlyphSize>` size=3 **)**                   |
-   +---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` | :ref:`get_origin_from_joy_event<class_InputGlyphsSingleton_method_get_origin_from_joy_event>` **(** :ref:`InputEvent<class_InputEvent>` input_event **)** |const|                                                                                                                               |
-   +---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                                       | :ref:`has_glyph_texture<class_InputGlyphsSingleton_method_has_glyph_texture>` **(** :ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` input_origin, :ref:`int<class_int>` style, :ref:`HBInputGlyphSize<enum_InputGlyphsSingleton_HBInputGlyphSize>` size=3 **)**                   |
-   +---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                                          | :ref:`request_glyph_texture_load<class_InputGlyphsSingleton_method_request_glyph_texture_load>` **(** :ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` input_origin, :ref:`int<class_int>` style, :ref:`HBInputGlyphSize<enum_InputGlyphsSingleton_HBInputGlyphSize>` size=3 **)** |
-   +---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Texture2D<class_Texture2D>`                         | :ref:`get_glyph_texture<class_InputGlyphsSingleton_method_get_glyph_texture>` **(** :ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` input_origin, |bitfield|\<:ref:`InputGlyphStyle<enum_InputGlyphsSingleton_InputGlyphStyle>`\> style, :ref:`InputGlyphSize<enum_InputGlyphsSingleton_InputGlyphSize>` size=3 **)**                   |
+   +-----------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` | :ref:`get_origin_from_joy_event<class_InputGlyphsSingleton_method_get_origin_from_joy_event>` **(** :ref:`InputEvent<class_InputEvent>` input_event **)** |const|                                                                                                                                                                                 |
+   +-----------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                   | :ref:`has_glyph_texture<class_InputGlyphsSingleton_method_has_glyph_texture>` **(** :ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` input_origin, |bitfield|\<:ref:`InputGlyphStyle<enum_InputGlyphsSingleton_InputGlyphStyle>`\> style, :ref:`InputGlyphSize<enum_InputGlyphsSingleton_InputGlyphSize>` size=3 **)**                   |
+   +-----------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                               | :ref:`input_type_to_localized_string<class_InputGlyphsSingleton_method_input_type_to_localized_string>` **(** :ref:`InputType<enum_InputGlyphsSingleton_InputType>` input_type **)** |const|                                                                                                                                                      |
+   +-----------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                      | :ref:`request_glyph_texture_load<class_InputGlyphsSingleton_method_request_glyph_texture_load>` **(** :ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` input_origin, |bitfield|\<:ref:`InputGlyphStyle<enum_InputGlyphsSingleton_InputGlyphStyle>`\> style, :ref:`InputGlyphSize<enum_InputGlyphsSingleton_InputGlyphSize>` size=3 **)** |
+   +-----------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -55,15 +57,13 @@ Methods
 Signals
 -------
 
-.. _class_InputGlyphsSingleton_signal_input_type_changed:
+.. _class_InputGlyphsSingleton_signal_input_glyphs_changed:
 
 .. rst-class:: classref-signal
 
-**input_type_changed** **(** **)**
+**input_glyphs_changed** **(** **)**
 
-.. container:: contribute
-
-	There is currently no description for this signal. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+Emitted when the input glyphs have to be reloaded for whatever reason.
 
 .. rst-class:: classref-section-separator
 
@@ -74,17 +74,17 @@ Signals
 Enumerations
 ------------
 
-.. _enum_InputGlyphsSingleton_HBInputOrigin:
+.. _enum_InputGlyphsSingleton_InputOrigin:
 
 .. rst-class:: classref-enumeration
 
-enum **HBInputOrigin**:
+enum **InputOrigin**:
 
 .. _class_InputGlyphsSingleton_constant_INPUT_ORIGIN_INVALID:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_INVALID** = ``-1``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_INVALID** = ``-1``
 
 
 
@@ -92,7 +92,7 @@ enum **HBInputOrigin**:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_A** = ``0``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_A** = ``0``
 
 
 
@@ -100,7 +100,7 @@ enum **HBInputOrigin**:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_B** = ``1``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_B** = ``1``
 
 
 
@@ -108,7 +108,7 @@ enum **HBInputOrigin**:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_X** = ``2``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_X** = ``2``
 
 
 
@@ -116,7 +116,7 @@ enum **HBInputOrigin**:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_Y** = ``3``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_Y** = ``3``
 
 
 
@@ -124,7 +124,7 @@ enum **HBInputOrigin**:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_VIEW** = ``4``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_VIEW** = ``4``
 
 Select/Back
 
@@ -132,7 +132,7 @@ Select/Back
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_MENU** = ``5``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_MENU** = ``5``
 
 Start
 
@@ -140,7 +140,7 @@ Start
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_LEFTBUMPER** = ``6``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_LEFTBUMPER** = ``6``
 
 
 
@@ -148,7 +148,7 @@ Start
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_RIGHTBUMPER** = ``7``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_RIGHTBUMPER** = ``7``
 
 
 
@@ -156,7 +156,7 @@ Start
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_LEFTTRIGGER_PULL** = ``8``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_LEFTTRIGGER_PULL** = ``8``
 
 
 
@@ -164,7 +164,7 @@ Start
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_LEFTTRIGGER_CLICK** = ``9``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_LEFTTRIGGER_CLICK** = ``9``
 
 
 
@@ -172,7 +172,7 @@ Start
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_RIGHTTRIGGER_PULL** = ``10``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_RIGHTTRIGGER_PULL** = ``10``
 
 
 
@@ -180,7 +180,7 @@ Start
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_RIGHTTRIGGER_CLICK** = ``11``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_RIGHTTRIGGER_CLICK** = ``11``
 
 
 
@@ -188,7 +188,7 @@ Start
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_LEFTSTICK_MOVE** = ``12``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_LEFTSTICK_MOVE** = ``12``
 
 
 
@@ -196,7 +196,7 @@ Start
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_LEFTSTICK_CLICK** = ``13``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_LEFTSTICK_CLICK** = ``13``
 
 
 
@@ -204,7 +204,7 @@ Start
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_LEFTSTICK_DPADNORTH** = ``14``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_LEFTSTICK_DPADNORTH** = ``14``
 
 
 
@@ -212,7 +212,7 @@ Start
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_LEFTSTICK_DPADSOUTH** = ``15``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_LEFTSTICK_DPADSOUTH** = ``15``
 
 
 
@@ -220,7 +220,7 @@ Start
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_LEFTSTICK_DPADWEST** = ``16``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_LEFTSTICK_DPADWEST** = ``16``
 
 
 
@@ -228,7 +228,7 @@ Start
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_LEFTSTICK_DPADEAST** = ``17``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_LEFTSTICK_DPADEAST** = ``17``
 
 
 
@@ -236,7 +236,7 @@ Start
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_RIGHTSTICK_MOVE** = ``18``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_RIGHTSTICK_MOVE** = ``18``
 
 
 
@@ -244,7 +244,7 @@ Start
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_RIGHTSTICK_CLICK** = ``19``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_RIGHTSTICK_CLICK** = ``19``
 
 
 
@@ -252,7 +252,7 @@ Start
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_RIGHTSTICK_DPADNORTH** = ``20``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_RIGHTSTICK_DPADNORTH** = ``20``
 
 
 
@@ -260,7 +260,7 @@ Start
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_RIGHTSTICK_DPADSOUTH** = ``21``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_RIGHTSTICK_DPADSOUTH** = ``21``
 
 
 
@@ -268,7 +268,7 @@ Start
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_RIGHTSTICK_DPADWEST** = ``22``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_RIGHTSTICK_DPADWEST** = ``22``
 
 
 
@@ -276,7 +276,7 @@ Start
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_RIGHTSTICK_DPADEAST** = ``23``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_RIGHTSTICK_DPADEAST** = ``23``
 
 
 
@@ -284,7 +284,7 @@ Start
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_DPAD_NORTH** = ``24``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_DPAD_NORTH** = ``24``
 
 
 
@@ -292,7 +292,7 @@ Start
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_DPAD_SOUTH** = ``25``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_DPAD_SOUTH** = ``25``
 
 
 
@@ -300,7 +300,7 @@ Start
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_DPAD_WEST** = ``26``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_DPAD_WEST** = ``26``
 
 
 
@@ -308,7 +308,7 @@ Start
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_DPAD_EAST** = ``27``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_DPAD_EAST** = ``27``
 
 
 
@@ -316,7 +316,7 @@ Start
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_DPAD_MOVE** = ``28``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_DPAD_MOVE** = ``28``
 
 
 
@@ -324,7 +324,7 @@ Start
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_MISC1** = ``29``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_MISC1** = ``29``
 
 Xbox Series X share button, PS5 microphone button, Nintendo Switch Pro capture button, Amazon Luna microphone button
 
@@ -332,7 +332,7 @@ Xbox Series X share button, PS5 microphone button, Nintendo Switch Pro capture b
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_PADDLE1** = ``30``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_PADDLE1** = ``30``
 
 Xbox Elite paddle P1 (upper left, facing the back)
 
@@ -340,7 +340,7 @@ Xbox Elite paddle P1 (upper left, facing the back)
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_PADDLE2** = ``31``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_PADDLE2** = ``31``
 
 Xbox Elite paddle P3 (upper right, facing the back)
 
@@ -348,7 +348,7 @@ Xbox Elite paddle P3 (upper right, facing the back)
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_PADDLE3** = ``32``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_PADDLE3** = ``32``
 
 Xbox Elite paddle P2 (lower left, facing the back)
 
@@ -356,7 +356,7 @@ Xbox Elite paddle P2 (lower left, facing the back)
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_PADDLE4** = ``33``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_PADDLE4** = ``33``
 
 Xbox Elite paddle P4 (lower right, facing the back)
 
@@ -364,7 +364,7 @@ Xbox Elite paddle P4 (lower right, facing the back)
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_TRACKPAD_CLICK** = ``34``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_TRACKPAD_CLICK** = ``34``
 
 
 
@@ -372,7 +372,7 @@ Xbox Elite paddle P4 (lower right, facing the back)
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **INPUT_ORIGIN_COUNT** = ``35``
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **INPUT_ORIGIN_COUNT** = ``35``
 
 
 
@@ -380,17 +380,17 @@ Xbox Elite paddle P4 (lower right, facing the back)
 
 ----
 
-.. _enum_InputGlyphsSingleton_HBInputType:
+.. _enum_InputGlyphsSingleton_InputType:
 
 .. rst-class:: classref-enumeration
 
-enum **HBInputType**:
+enum **InputType**:
 
 .. _class_InputGlyphsSingleton_constant_UNKNOWN:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputType<enum_InputGlyphsSingleton_HBInputType>` **UNKNOWN** = ``0``
+:ref:`InputType<enum_InputGlyphsSingleton_InputType>` **UNKNOWN** = ``0``
 
 
 
@@ -398,7 +398,7 @@ enum **HBInputType**:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputType<enum_InputGlyphsSingleton_HBInputType>` **STEAM_CONTROLLER** = ``1``
+:ref:`InputType<enum_InputGlyphsSingleton_InputType>` **STEAM_CONTROLLER** = ``1``
 
 
 
@@ -406,7 +406,7 @@ enum **HBInputType**:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputType<enum_InputGlyphsSingleton_HBInputType>` **XBOX_360_CONTROLLER** = ``2``
+:ref:`InputType<enum_InputGlyphsSingleton_InputType>` **XBOX_360_CONTROLLER** = ``2``
 
 
 
@@ -414,7 +414,7 @@ enum **HBInputType**:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputType<enum_InputGlyphsSingleton_HBInputType>` **XBOX_ONE_CONTROLLER** = ``3``
+:ref:`InputType<enum_InputGlyphsSingleton_InputType>` **XBOX_ONE_CONTROLLER** = ``3``
 
 
 
@@ -422,7 +422,7 @@ enum **HBInputType**:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputType<enum_InputGlyphsSingleton_HBInputType>` **GENERIC_XINPUT_CONTROLLER** = ``4``
+:ref:`InputType<enum_InputGlyphsSingleton_InputType>` **GENERIC_XINPUT_CONTROLLER** = ``4``
 
 
 
@@ -430,7 +430,7 @@ enum **HBInputType**:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputType<enum_InputGlyphsSingleton_HBInputType>` **PS3_CONTROLLER** = ``5``
+:ref:`InputType<enum_InputGlyphsSingleton_InputType>` **PS3_CONTROLLER** = ``5``
 
 
 
@@ -438,7 +438,7 @@ enum **HBInputType**:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputType<enum_InputGlyphsSingleton_HBInputType>` **PS4_CONTROLLER** = ``6``
+:ref:`InputType<enum_InputGlyphsSingleton_InputType>` **PS4_CONTROLLER** = ``6``
 
 
 
@@ -446,7 +446,7 @@ enum **HBInputType**:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputType<enum_InputGlyphsSingleton_HBInputType>` **PS5_CONTROLLER** = ``7``
+:ref:`InputType<enum_InputGlyphsSingleton_InputType>` **PS5_CONTROLLER** = ``7``
 
 
 
@@ -454,7 +454,7 @@ enum **HBInputType**:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputType<enum_InputGlyphsSingleton_HBInputType>` **SWITCH_PRO_CONTROLLER** = ``8``
+:ref:`InputType<enum_InputGlyphsSingleton_InputType>` **SWITCH_PRO_CONTROLLER** = ``8``
 
 
 
@@ -462,7 +462,7 @@ enum **HBInputType**:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputType<enum_InputGlyphsSingleton_HBInputType>` **STEAM_DECK_CONTROLLER** = ``9``
+:ref:`InputType<enum_InputGlyphsSingleton_InputType>` **STEAM_DECK_CONTROLLER** = ``9``
 
 
 
@@ -470,7 +470,7 @@ enum **HBInputType**:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputType<enum_InputGlyphsSingleton_HBInputType>` **INPUT_TYPE_MAX** = ``10``
+:ref:`InputType<enum_InputGlyphsSingleton_InputType>` **INPUT_TYPE_MAX** = ``10``
 
 
 
@@ -478,17 +478,17 @@ enum **HBInputType**:
 
 ----
 
-.. _enum_InputGlyphsSingleton_HBInputGlyphSize:
+.. _enum_InputGlyphsSingleton_InputGlyphSize:
 
 .. rst-class:: classref-enumeration
 
-enum **HBInputGlyphSize**:
+enum **InputGlyphSize**:
 
 .. _class_InputGlyphsSingleton_constant_GLYPH_SIZE_SMALL:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputGlyphSize<enum_InputGlyphsSingleton_HBInputGlyphSize>` **GLYPH_SIZE_SMALL** = ``0``
+:ref:`InputGlyphSize<enum_InputGlyphsSingleton_InputGlyphSize>` **GLYPH_SIZE_SMALL** = ``0``
 
 Small glyph size, usually 32x32.
 
@@ -496,7 +496,7 @@ Small glyph size, usually 32x32.
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputGlyphSize<enum_InputGlyphsSingleton_HBInputGlyphSize>` **GLYPH_SIZE_MEDIUM** = ``1``
+:ref:`InputGlyphSize<enum_InputGlyphsSingleton_InputGlyphSize>` **GLYPH_SIZE_MEDIUM** = ``1``
 
 Medium glyph size, usually 128x128.
 
@@ -504,7 +504,7 @@ Medium glyph size, usually 128x128.
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputGlyphSize<enum_InputGlyphsSingleton_HBInputGlyphSize>` **GLYPH_SIZE_LARGE** = ``2``
+:ref:`InputGlyphSize<enum_InputGlyphsSingleton_InputGlyphSize>` **GLYPH_SIZE_LARGE** = ``2``
 
 Large glyph size, usually 256x256.
 
@@ -512,9 +512,61 @@ Large glyph size, usually 256x256.
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`HBInputGlyphSize<enum_InputGlyphsSingleton_HBInputGlyphSize>` **GLYPH_SIZE_MAX** = ``3``
+:ref:`InputGlyphSize<enum_InputGlyphsSingleton_InputGlyphSize>` **GLYPH_SIZE_MAX** = ``3``
 
 
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _enum_InputGlyphsSingleton_InputGlyphStyle:
+
+.. rst-class:: classref-enumeration
+
+flags **InputGlyphStyle**:
+
+.. _class_InputGlyphsSingleton_constant_GLYPH_STYLE_KNOCKOUT:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`InputGlyphStyle<enum_InputGlyphsSingleton_InputGlyphStyle>` **GLYPH_STYLE_KNOCKOUT** = ``0``
+
+Face buttons will have colored labels/outlines on a knocked out background.
+
+Rest of inputs will have white detail/borders on a knocked out background.
+
+.. _class_InputGlyphsSingleton_constant_GLYPH_STYLE_LIGHT:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`InputGlyphStyle<enum_InputGlyphsSingleton_InputGlyphStyle>` **GLYPH_STYLE_LIGHT** = ``1``
+
+Black detail/borders on a white background.
+
+.. _class_InputGlyphsSingleton_constant_GLYPH_STYLE_DARK:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`InputGlyphStyle<enum_InputGlyphsSingleton_InputGlyphStyle>` **GLYPH_STYLE_DARK** = ``2``
+
+White detail/borders on a black background.
+
+.. _class_InputGlyphsSingleton_constant_GLYPH_STYLE_NEUTRAL_COLOR_ABXY:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`InputGlyphStyle<enum_InputGlyphsSingleton_InputGlyphStyle>` **GLYPH_STYLE_NEUTRAL_COLOR_ABXY** = ``16``
+
+ABXY Buttons will match the base style color instead of their normal associated color.
+
+.. _class_InputGlyphsSingleton_constant_GLYPH_STYLE_SOLID_ABXY:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`InputGlyphStyle<enum_InputGlyphsSingleton_InputGlyphStyle>` **GLYPH_STYLE_SOLID_ABXY** = ``32``
+
+ABXY Buttons will have a solid fill.
 
 .. rst-class:: classref-section-separator
 
@@ -529,16 +581,14 @@ Property Descriptions
 
 .. rst-class:: classref-property
 
-:ref:`HBInputType<enum_InputGlyphsSingleton_HBInputType>` **forced_input_type**
+:ref:`InputType<enum_InputGlyphsSingleton_InputType>` **forced_input_type**
 
 .. rst-class:: classref-property-setget
 
-- void **set_forced_input_type** **(** :ref:`HBInputType<enum_InputGlyphsSingleton_HBInputType>` value **)**
-- :ref:`HBInputType<enum_InputGlyphsSingleton_HBInputType>` **get_forced_input_type** **(** **)**
+- void **set_forced_input_type** **(** :ref:`InputType<enum_InputGlyphsSingleton_InputType>` value **)**
+- :ref:`InputType<enum_InputGlyphsSingleton_InputType>` **get_forced_input_type** **(** **)**
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+Sets the input type that will override the current input type.
 
 .. rst-class:: classref-section-separator
 
@@ -553,7 +603,7 @@ Method Descriptions
 
 .. rst-class:: classref-method
 
-:ref:`Texture2D<class_Texture2D>` **get_glyph_texture** **(** :ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` input_origin, :ref:`int<class_int>` style, :ref:`HBInputGlyphSize<enum_InputGlyphsSingleton_HBInputGlyphSize>` size=3 **)**
+:ref:`Texture2D<class_Texture2D>` **get_glyph_texture** **(** :ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` input_origin, |bitfield|\<:ref:`InputGlyphStyle<enum_InputGlyphsSingleton_InputGlyphStyle>`\> style, :ref:`InputGlyphSize<enum_InputGlyphsSingleton_InputGlyphSize>` size=3 **)**
 
 Retrieves the glyph texture, make sure it is already loaded by using :ref:`has_glyph_texture<class_InputGlyphsSingleton_method_has_glyph_texture>`.
 
@@ -565,7 +615,7 @@ Retrieves the glyph texture, make sure it is already loaded by using :ref:`has_g
 
 .. rst-class:: classref-method
 
-:ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` **get_origin_from_joy_event** **(** :ref:`InputEvent<class_InputEvent>` input_event **)** |const|
+:ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` **get_origin_from_joy_event** **(** :ref:`InputEvent<class_InputEvent>` input_event **)** |const|
 
 Returns the input origin from the given joy event, it will return :ref:`INPUT_ORIGIN_INVALID<class_InputGlyphsSingleton_constant_INPUT_ORIGIN_INVALID>` if it couldn't find any.
 
@@ -577,9 +627,21 @@ Returns the input origin from the given joy event, it will return :ref:`INPUT_OR
 
 .. rst-class:: classref-method
 
-:ref:`bool<class_bool>` **has_glyph_texture** **(** :ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` input_origin, :ref:`int<class_int>` style, :ref:`HBInputGlyphSize<enum_InputGlyphsSingleton_HBInputGlyphSize>` size=3 **)**
+:ref:`bool<class_bool>` **has_glyph_texture** **(** :ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` input_origin, |bitfield|\<:ref:`InputGlyphStyle<enum_InputGlyphsSingleton_InputGlyphStyle>`\> style, :ref:`InputGlyphSize<enum_InputGlyphsSingleton_InputGlyphSize>` size=3 **)**
 
 Returns ``true`` if the glyph texture is ready and can be retrieved using :ref:`get_glyph_texture<class_InputGlyphsSingleton_method_get_glyph_texture>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_InputGlyphsSingleton_method_input_type_to_localized_string:
+
+.. rst-class:: classref-method
+
+:ref:`String<class_String>` **input_type_to_localized_string** **(** :ref:`InputType<enum_InputGlyphsSingleton_InputType>` input_type **)** |const|
+
+Returns a localized string for the given input type.
 
 .. rst-class:: classref-item-separator
 
@@ -589,7 +651,7 @@ Returns ``true`` if the glyph texture is ready and can be retrieved using :ref:`
 
 .. rst-class:: classref-method
 
-void **request_glyph_texture_load** **(** :ref:`HBInputOrigin<enum_InputGlyphsSingleton_HBInputOrigin>` input_origin, :ref:`int<class_int>` style, :ref:`HBInputGlyphSize<enum_InputGlyphsSingleton_HBInputGlyphSize>` size=3 **)**
+void **request_glyph_texture_load** **(** :ref:`InputOrigin<enum_InputGlyphsSingleton_InputOrigin>` input_origin, |bitfield|\<:ref:`InputGlyphStyle<enum_InputGlyphsSingleton_InputGlyphStyle>`\> style, :ref:`InputGlyphSize<enum_InputGlyphsSingleton_InputGlyphSize>` size=3 **)**
 
 Request a glyph to start loading, does nothing if it's already loading.
 

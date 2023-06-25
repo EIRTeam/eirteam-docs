@@ -4,9 +4,9 @@ Getting started
 ===============
 
 .. warning:: To be able to use this module you need to have `this PR <https://github.com/godotengine/godot/pull/78539>`_ 
-    in your engine. This is necessary because Steam Input sets the environment variable `SDL_GAMECONTROLLER_IGNORE_DEVICES` and
+    in your engine. This is necessary because Steam Input sets the environment variable ``SDL_GAMECONTROLLER_IGNORE_DEVICES`` and
     expects you to respect it by ignoring the controllers it gives you.
-    
+
     Even if you are not using Steam Input, the PR is still suggested as it gives you some metadata that could be useful for debugging.
 
 The input glyph module allows you to automatically change the displayed glyphs in your
@@ -30,6 +30,7 @@ You can also seamlessly integrate with the Steamworks module very easily, all yo
 to do is to have both modules in your engine. When you call :ref:`HBSteamInput.init() <class_HBSteamInput_method_init>` it will
 automatically initialize the input glyphs module to use Steamworks as the source for your glyphs.
 
-.. warning:: Make sure you have the :ref:`PR mentioned before <doc_input_glyphs_getting_started>` merged, otherwise
+.. warning::
+    Make sure you have the :ref:`PR mentioned before <doc_input_glyphs_getting_started>` merged, otherwise
     the input glyphs system won't be able to identify which controllers are bound to which steamworks input handles.
 

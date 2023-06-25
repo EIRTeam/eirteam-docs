@@ -6,7 +6,7 @@
 .. _eirteam_api:
 
 EIRTeam Godot Modules API
-==================
+=========================
 
 This is a list of all classes provided by EIRTeam modules.
 
