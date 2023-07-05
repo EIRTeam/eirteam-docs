@@ -19,6 +19,12 @@ Steamworks
 
     class_steamworks.rst
     class_hbsteaminput.rst
+    class_hbsteamfriends.rst
+    class_hbsteamfriend.rst
+    class_hbsteamlobby.rst
+    class_hblobbylistquery.rst
+    class_hbsteammatchmaking.rst
+    class_steamworksconstants.rst
 
 Input Glyphs
 ============
