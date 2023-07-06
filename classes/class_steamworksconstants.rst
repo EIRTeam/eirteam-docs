@@ -1201,6 +1201,106 @@ enum **LobbyDistanceFilter**:
 
 ----
 
+.. _enum_SteamworksConstants_P2PSessionError:
+
+.. rst-class:: classref-enumeration
+
+enum **P2PSessionError**:
+
+.. _class_SteamworksConstants_constant_P2P_SESSION_ERROR_NONE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`P2PSessionError<enum_SteamworksConstants_P2PSessionError>` **P2P_SESSION_ERROR_NONE** = ``0``
+
+
+
+.. _class_SteamworksConstants_constant_P2P_SESSION_ERROR_NO_RIGHTS_TO_APP:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`P2PSessionError<enum_SteamworksConstants_P2PSessionError>` **P2P_SESSION_ERROR_NO_RIGHTS_TO_APP** = ``2``
+
+
+
+.. _class_SteamworksConstants_constant_P2P_SESSION_ERROR_TIMEOUT:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`P2PSessionError<enum_SteamworksConstants_P2PSessionError>` **P2P_SESSION_ERROR_TIMEOUT** = ``4``
+
+
+
+.. _class_SteamworksConstants_constant_P2P_SESSION_ERROR_NOT_RUNNING_APP_DELETED:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`P2PSessionError<enum_SteamworksConstants_P2PSessionError>` **P2P_SESSION_ERROR_NOT_RUNNING_APP_DELETED** = ``1``
+
+
+
+.. _class_SteamworksConstants_constant_P2P_SESSION_ERROR_DESTINATION_NOT_LOGGED_IN_DELETED:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`P2PSessionError<enum_SteamworksConstants_P2PSessionError>` **P2P_SESSION_ERROR_DESTINATION_NOT_LOGGED_IN_DELETED** = ``3``
+
+
+
+.. _class_SteamworksConstants_constant_P2P_SESSION_ERROR_MAX:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`P2PSessionError<enum_SteamworksConstants_P2PSessionError>` **P2P_SESSION_ERROR_MAX** = ``5``
+
+
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _enum_SteamworksConstants_P2PSend:
+
+.. rst-class:: classref-enumeration
+
+enum **P2PSend**:
+
+.. _class_SteamworksConstants_constant_P2P_SEND_UNRELIABLE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`P2PSend<enum_SteamworksConstants_P2PSend>` **P2P_SEND_UNRELIABLE** = ``0``
+
+
+
+.. _class_SteamworksConstants_constant_P2P_SEND_UNRELIABLE_NO_DELAY:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`P2PSend<enum_SteamworksConstants_P2PSend>` **P2P_SEND_UNRELIABLE_NO_DELAY** = ``1``
+
+
+
+.. _class_SteamworksConstants_constant_P2P_SEND_RELIABLE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`P2PSend<enum_SteamworksConstants_P2PSend>` **P2P_SEND_RELIABLE** = ``2``
+
+
+
+.. _class_SteamworksConstants_constant_P2P_SEND_RELIABLE_WITH_BUFFERING:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`P2PSend<enum_SteamworksConstants_P2PSend>` **P2P_SEND_RELIABLE_WITH_BUFFERING** = ``3``
+
+
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _enum_SteamworksConstants_InputActionOrigin:
 
 .. rst-class:: classref-enumeration
