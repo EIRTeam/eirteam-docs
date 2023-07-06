@@ -16,6 +16,20 @@ Class representing a Steam lobby.
 
 .. rst-class:: classref-reftable-group
 
+Properties
+----------
+
+.. table::
+   :widths: auto
+
+   +-------------------------------------------+-------------------------------------------------------------+
+   | :ref:`int<class_int>`                     | :ref:`max_members<class_HBSteamLobby_property_max_members>` |
+   +-------------------------------------------+-------------------------------------------------------------+
+   | :ref:`HBSteamFriend<class_HBSteamFriend>` | :ref:`owner<class_HBSteamLobby_property_owner>`             |
+   +-------------------------------------------+-------------------------------------------------------------+
+
+.. rst-class:: classref-reftable-group
+
 Methods
 -------
 
@@ -27,7 +41,15 @@ Methods
    +-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`HBSteamLobby<class_HBSteamLobby>` | :ref:`from_id<class_HBSteamLobby_method_from_id>` **(** :ref:`int<class_int>` lobby_id **)** |static|                                                                               |
    +-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`             | :ref:`get_data<class_HBSteamLobby_method_get_data>` **(** :ref:`String<class_String>` key **)** |const|                                                                             |
+   +-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`             | :ref:`get_member_data<class_HBSteamLobby_method_get_member_data>` **(** :ref:`HBSteamFriend<class_HBSteamFriend>` member, :ref:`String<class_String>` key **)** |const|             |
+   +-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                    | :ref:`join_lobby<class_HBSteamLobby_method_join_lobby>` **(** **)**                                                                                                                 |
+   +-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                 | :ref:`set_data<class_HBSteamLobby_method_set_data>` **(** :ref:`String<class_String>` key, :ref:`String<class_String>` value **)**                                                  |
+   +-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                 | :ref:`set_lobby_owner<class_HBSteamLobby_method_set_lobby_owner>` **(** :ref:`HBSteamFriend<class_HBSteamFriend>` owner **)**                                                       |
    +-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
@@ -39,13 +61,37 @@ Methods
 Signals
 -------
 
+.. _class_HBSteamLobby_signal_chat_message_received:
+
+.. rst-class:: classref-signal
+
+**chat_message_received** **(** :ref:`HBSteamFriend<class_HBSteamFriend>` sender, :ref:`PackedByteArray<class_PackedByteArray>` data **)**
+
+Emitted when a chat message is received.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_HBSteamLobby_signal_lobby_created:
 
 .. rst-class:: classref-signal
 
 **lobby_created** **(** :ref:`int<class_int>` result **)**
 
-Called when a lobby is finished creating.
+Emitted when lobby creation has completed.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_HBSteamLobby_signal_lobby_data_updated:
+
+.. rst-class:: classref-signal
+
+**lobby_data_updated** **(** **)**
+
+Emitted when the per-lobby custom data has changed.
 
 .. rst-class:: classref-item-separator
 
@@ -57,7 +103,85 @@ Called when a lobby is finished creating.
 
 **lobby_entered** **(** :ref:`bool<class_bool>` success **)**
 
-Called when a lobby is entered.
+Emitted when the user has entered the lobby.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_HBSteamLobby_signal_lobby_member_data_updated:
+
+.. rst-class:: classref-signal
+
+**lobby_member_data_updated** **(** :ref:`HBSteamFriend<class_HBSteamFriend>` member **)**
+
+Emitted when the per-lobby member custom data has changed.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_HBSteamLobby_signal_member_joined:
+
+.. rst-class:: classref-signal
+
+**member_joined** **(** :ref:`HBSteamFriend<class_HBSteamFriend>` new_member **)**
+
+Emitted when a new member enters the lobby.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_HBSteamLobby_signal_member_left:
+
+.. rst-class:: classref-signal
+
+**member_left** **(** :ref:`HBSteamFriend<class_HBSteamFriend>` new_member **)**
+
+Emitted when a new member leaves the lobby.
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Property Descriptions
+---------------------
+
+.. _class_HBSteamLobby_property_max_members:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **max_members**
+
+.. rst-class:: classref-property-setget
+
+- void **set_max_members** **(** :ref:`int<class_int>` value **)**
+- :ref:`int<class_int>` **get_max_members** **(** **)**
+
+Maximum number of members that can join this lobby.
+
+
+
+\ **Note:** Can only be set by the owner of the lobby.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_HBSteamLobby_property_owner:
+
+.. rst-class:: classref-property
+
+:ref:`HBSteamFriend<class_HBSteamFriend>` **owner**
+
+.. rst-class:: classref-property-setget
+
+- :ref:`HBSteamFriend<class_HBSteamFriend>` **get_owner** **(** **)**
+
+Current owner of the lobby.
 
 .. rst-class:: classref-section-separator
 
@@ -92,6 +216,30 @@ Creates a steam lobby from a given ID.
 
 ----
 
+.. _class_HBSteamLobby_method_get_data:
+
+.. rst-class:: classref-method
+
+:ref:`String<class_String>` **get_data** **(** :ref:`String<class_String>` key **)** |const|
+
+Returns custom data that was set on this lobby.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_HBSteamLobby_method_get_member_data:
+
+.. rst-class:: classref-method
+
+:ref:`String<class_String>` **get_member_data** **(** :ref:`HBSteamFriend<class_HBSteamFriend>` member, :ref:`String<class_String>` key **)** |const|
+
+Returns member-specific custom data.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_HBSteamLobby_method_join_lobby:
 
 .. rst-class:: classref-method
@@ -99,6 +247,36 @@ Creates a steam lobby from a given ID.
 void **join_lobby** **(** **)**
 
 Joins this lobby.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_HBSteamLobby_method_set_data:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **set_data** **(** :ref:`String<class_String>` key, :ref:`String<class_String>` value **)**
+
+Sets custom data for this lobby, can only be done by the owner.
+
+
+
+\ **Note:** Can only be set by the owner of the lobby.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_HBSteamLobby_method_set_lobby_owner:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **set_lobby_owner** **(** :ref:`HBSteamFriend<class_HBSteamFriend>` owner **)**
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`

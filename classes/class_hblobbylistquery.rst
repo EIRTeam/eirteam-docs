@@ -192,9 +192,7 @@ The lobbies value must be less than this one.
 
 :ref:`HBLobbyListQuery<class_HBLobbyListQuery>` **with_max_results** **(** :ref:`int<class_int>` max_results **)**
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+Sets the maximum amount of results possible.
 
 .. rst-class:: classref-item-separator
 

@@ -24,6 +24,8 @@ Steamworks
     class_hbsteamlobby.rst
     class_hblobbylistquery.rst
     class_hbsteammatchmaking.rst
+    class_hbsteamnetworking.rst
+    class_steamp2ppacket.rst
     class_steamworksconstants.rst
 
 Input Glyphs
