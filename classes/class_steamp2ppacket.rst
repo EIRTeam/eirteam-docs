@@ -12,9 +12,58 @@ SteamP2PPacket
 
 **Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-.. container:: contribute
+A P2P packet from a Steam P2P session.
 
-	There is currently no description for this class. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+.. rst-class:: classref-reftable-group
+
+Properties
+----------
+
+.. table::
+   :widths: auto
+
+   +-----------------------------------------------+-----------------------------------------------------+
+   | :ref:`PackedByteArray<class_PackedByteArray>` | :ref:`data<class_SteamP2PPacket_property_data>`     |
+   +-----------------------------------------------+-----------------------------------------------------+
+   | :ref:`HBSteamFriend<class_HBSteamFriend>`     | :ref:`sender<class_SteamP2PPacket_property_sender>` |
+   +-----------------------------------------------+-----------------------------------------------------+
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Property Descriptions
+---------------------
+
+.. _class_SteamP2PPacket_property_data:
+
+.. rst-class:: classref-property
+
+:ref:`PackedByteArray<class_PackedByteArray>` **data**
+
+.. rst-class:: classref-property-setget
+
+- :ref:`PackedByteArray<class_PackedByteArray>` **get_data** **(** **)**
+
+The data in this P2P packet.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_SteamP2PPacket_property_sender:
+
+.. rst-class:: classref-property
+
+:ref:`HBSteamFriend<class_HBSteamFriend>` **sender**
+
+.. rst-class:: classref-property-setget
+
+- :ref:`HBSteamFriend<class_HBSteamFriend>` **get_sender** **(** **)**
+
+The sender of the packet.
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
