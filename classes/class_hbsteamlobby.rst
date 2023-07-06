@@ -274,9 +274,7 @@ Sets custom data for this lobby, can only be done by the owner.
 
 :ref:`bool<class_bool>` **set_lobby_owner** **(** :ref:`HBSteamFriend<class_HBSteamFriend>` owner **)**
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+Sets the owner of the lobby.
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
