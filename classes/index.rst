@@ -25,6 +25,7 @@ Steamworks
     class_hbsteamapps.rst
     class_hbsteamugc.rst
     class_hbsteamugcitem.rst
+    class_hbsteamugceditor.rst
     class_hbsteamugcadditionalpreview.rst
     class_hbsteamugcquery.rst
     class_hbsteamugcquerypageresult.rst
