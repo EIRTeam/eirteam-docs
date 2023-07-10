@@ -16,25 +16,218 @@ Base singleton to interact with the Steamworks API.
 
 .. rst-class:: classref-reftable-group
 
+Properties
+----------
+
+.. table::
+   :widths: auto
+
+   +---------------------------------------------------------+-------------------------------------------------------------------------+
+   | :ref:`HBSteamApps<class_HBSteamApps>`                   | :ref:`get_apps<class_Steamworks_property_get_apps>`                     |
+   +---------------------------------------------------------+-------------------------------------------------------------------------+
+   | :ref:`HBSteamFriends<class_HBSteamFriends>`             | :ref:`get_friends<class_Steamworks_property_get_friends>`               |
+   +---------------------------------------------------------+-------------------------------------------------------------------------+
+   | :ref:`HBSteamMatchmaking<class_HBSteamMatchmaking>`     | :ref:`get_matchmaking<class_Steamworks_property_get_matchmaking>`       |
+   +---------------------------------------------------------+-------------------------------------------------------------------------+
+   | :ref:`HBSteamNetworking<class_HBSteamNetworking>`       | :ref:`get_networking<class_Steamworks_property_get_networking>`         |
+   +---------------------------------------------------------+-------------------------------------------------------------------------+
+   | :ref:`HBSteamRemoteStorage<class_HBSteamRemoteStorage>` | :ref:`get_remote_storage<class_Steamworks_property_get_remote_storage>` |
+   +---------------------------------------------------------+-------------------------------------------------------------------------+
+   | :ref:`HBSteamUGC<class_HBSteamUGC>`                     | :ref:`get_ugc<class_Steamworks_property_get_ugc>`                       |
+   +---------------------------------------------------------+-------------------------------------------------------------------------+
+   | :ref:`HBSteamUser<class_HBSteamUser>`                   | :ref:`get_user<class_Steamworks_property_get_user>`                     |
+   +---------------------------------------------------------+-------------------------------------------------------------------------+
+   | :ref:`HBSteamUtils<class_HBSteamUtils>`                 | :ref:`get_utils<class_Steamworks_property_get_utils>`                   |
+   +---------------------------------------------------------+-------------------------------------------------------------------------+
+   | :ref:`HBSteamInput<class_HBSteamInput>`                 | :ref:`input<class_Steamworks_property_input>`                           |
+   +---------------------------------------------------------+-------------------------------------------------------------------------+
+
+.. rst-class:: classref-reftable-group
+
 Methods
 -------
 
 .. table::
    :widths: auto
 
-   +-------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`HBSteamInput<class_HBSteamInput>`   | :ref:`get_input<class_Steamworks_method_get_input>` **(** **)** |const|                                                                      |
-   +-------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`String<class_String>`               | :ref:`get_last_error<class_Steamworks_method_get_last_error>` **(** **)** |static|                                                           |
-   +-------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`HBSteamFriend<class_HBSteamFriend>` | :ref:`get_local_user<class_Steamworks_method_get_local_user>` **(** **)** |const|                                                            |
-   +-------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                   | :ref:`init<class_Steamworks_method_init>` **(** :ref:`int<class_int>` app_id, :ref:`bool<class_bool>` run_callbacks_automatically=true **)** |
-   +-------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                   | :ref:`is_valid<class_Steamworks_method_is_valid>` **(** **)** |const|                                                                        |
-   +-------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                      | :ref:`run_callbacks<class_Steamworks_method_run_callbacks>` **(** **)**                                                                      |
-   +-------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`       | :ref:`get_app_id<class_Steamworks_method_get_app_id>` **(** **)** |const|                                                                    |
+   +-----------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>` | :ref:`get_last_error<class_Steamworks_method_get_last_error>` **(** **)** |static|                                                           |
+   +-----------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`     | :ref:`init<class_Steamworks_method_init>` **(** :ref:`int<class_int>` app_id, :ref:`bool<class_bool>` run_callbacks_automatically=true **)** |
+   +-----------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`     | :ref:`is_valid<class_Steamworks_method_is_valid>` **(** **)** |const|                                                                        |
+   +-----------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                        | :ref:`run_callbacks<class_Steamworks_method_run_callbacks>` **(** **)**                                                                      |
+   +-----------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Property Descriptions
+---------------------
+
+.. _class_Steamworks_property_get_apps:
+
+.. rst-class:: classref-property
+
+:ref:`HBSteamApps<class_HBSteamApps>` **get_apps**
+
+.. rst-class:: classref-property-setget
+
+- :ref:`HBSteamApps<class_HBSteamApps>` **get_apps** **(** **)**
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Steamworks_property_get_friends:
+
+.. rst-class:: classref-property
+
+:ref:`HBSteamFriends<class_HBSteamFriends>` **get_friends**
+
+.. rst-class:: classref-property-setget
+
+- :ref:`HBSteamFriends<class_HBSteamFriends>` **get_friends** **(** **)**
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Steamworks_property_get_matchmaking:
+
+.. rst-class:: classref-property
+
+:ref:`HBSteamMatchmaking<class_HBSteamMatchmaking>` **get_matchmaking**
+
+.. rst-class:: classref-property-setget
+
+- :ref:`HBSteamMatchmaking<class_HBSteamMatchmaking>` **get_matchmaking** **(** **)**
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Steamworks_property_get_networking:
+
+.. rst-class:: classref-property
+
+:ref:`HBSteamNetworking<class_HBSteamNetworking>` **get_networking**
+
+.. rst-class:: classref-property-setget
+
+- :ref:`HBSteamNetworking<class_HBSteamNetworking>` **get_networking** **(** **)**
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Steamworks_property_get_remote_storage:
+
+.. rst-class:: classref-property
+
+:ref:`HBSteamRemoteStorage<class_HBSteamRemoteStorage>` **get_remote_storage**
+
+.. rst-class:: classref-property-setget
+
+- :ref:`HBSteamRemoteStorage<class_HBSteamRemoteStorage>` **get_remote_storage** **(** **)**
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Steamworks_property_get_ugc:
+
+.. rst-class:: classref-property
+
+:ref:`HBSteamUGC<class_HBSteamUGC>` **get_ugc**
+
+.. rst-class:: classref-property-setget
+
+- :ref:`HBSteamUGC<class_HBSteamUGC>` **get_ugc** **(** **)**
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Steamworks_property_get_user:
+
+.. rst-class:: classref-property
+
+:ref:`HBSteamUser<class_HBSteamUser>` **get_user**
+
+.. rst-class:: classref-property-setget
+
+- :ref:`HBSteamUser<class_HBSteamUser>` **get_user** **(** **)**
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Steamworks_property_get_utils:
+
+.. rst-class:: classref-property
+
+:ref:`HBSteamUtils<class_HBSteamUtils>` **get_utils**
+
+.. rst-class:: classref-property-setget
+
+- :ref:`HBSteamUtils<class_HBSteamUtils>` **get_utils** **(** **)**
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Steamworks_property_input:
+
+.. rst-class:: classref-property
+
+:ref:`HBSteamInput<class_HBSteamInput>` **input**
+
+.. rst-class:: classref-property-setget
+
+- :ref:`HBSteamInput<class_HBSteamInput>` **get_input** **(** **)**
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
 
 .. rst-class:: classref-section-separator
 
@@ -45,13 +238,15 @@ Methods
 Method Descriptions
 -------------------
 
-.. _class_Steamworks_method_get_input:
+.. _class_Steamworks_method_get_app_id:
 
 .. rst-class:: classref-method
 
-:ref:`HBSteamInput<class_HBSteamInput>` **get_input** **(** **)** |const|
+:ref:`int<class_int>` **get_app_id** **(** **)** |const|
 
-Returns the Steam Input interface.
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
 
 .. rst-class:: classref-item-separator
 
@@ -64,18 +259,6 @@ Returns the Steam Input interface.
 :ref:`String<class_String>` **get_last_error** **(** **)** |static|
 
 Returns the last error that ocurred.
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_Steamworks_method_get_local_user:
-
-.. rst-class:: classref-method
-
-:ref:`HBSteamFriend<class_HBSteamFriend>` **get_local_user** **(** **)** |const|
-
-Returns the currently logged-in user.
 
 .. rst-class:: classref-item-separator
 
