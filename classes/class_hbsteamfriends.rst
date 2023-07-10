@@ -22,9 +22,9 @@ Methods
 .. table::
    :widths: auto
 
-   +------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void | :ref:`activate_game_overlay_invite_dialog<class_HBSteamFriends_method_activate_game_overlay_invite_dialog>` **(** :ref:`HBSteamLobby<class_HBSteamLobby>` lobby **)** |
-   +------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void | :ref:`activate_game_overlay_invite_dialog<class_HBSteamFriends_method_activate_game_overlay_invite_dialog>` **(** :ref:`HBSteamLobby<class_HBSteamLobby>` lobby **)** |const| |
+   +------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -39,7 +39,7 @@ Method Descriptions
 
 .. rst-class:: classref-method
 
-void **activate_game_overlay_invite_dialog** **(** :ref:`HBSteamLobby<class_HBSteamLobby>` lobby **)**
+void **activate_game_overlay_invite_dialog** **(** :ref:`HBSteamLobby<class_HBSteamLobby>` lobby **)** |const|
 
 Activates the steam overlay that allows the user to invite their friends to the specified lobby.
 
