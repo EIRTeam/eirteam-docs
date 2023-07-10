@@ -16,6 +16,85 @@ HBSteamApps
 
 	There is currently no description for this class. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
 
+.. rst-class:: classref-reftable-group
+
+Methods
+-------
+
+.. table::
+   :widths: auto
+
+   +-----------------------------+---------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>` | :ref:`get_app_install_dir<class_HBSteamApps_method_get_app_install_dir>` **(** :ref:`int<class_int>` app_id **)** |const| |
+   +-----------------------------+---------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`     | :ref:`is_app_installed<class_HBSteamApps_method_is_app_installed>` **(** :ref:`int<class_int>` app_id **)** |const|       |
+   +-----------------------------+---------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`     | :ref:`is_subscribed<class_HBSteamApps_method_is_subscribed>` **(** **)** |const|                                          |
+   +-----------------------------+---------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`     | :ref:`is_subscribed_app<class_HBSteamApps_method_is_subscribed_app>` **(** :ref:`int<class_int>` app_id **)** |const|     |
+   +-----------------------------+---------------------------------------------------------------------------------------------------------------------------+
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Method Descriptions
+-------------------
+
+.. _class_HBSteamApps_method_get_app_install_dir:
+
+.. rst-class:: classref-method
+
+:ref:`String<class_String>` **get_app_install_dir** **(** :ref:`int<class_int>` app_id **)** |const|
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_HBSteamApps_method_is_app_installed:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **is_app_installed** **(** :ref:`int<class_int>` app_id **)** |const|
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_HBSteamApps_method_is_subscribed:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **is_subscribed** **(** **)** |const|
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_HBSteamApps_method_is_subscribed_app:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **is_subscribed_app** **(** :ref:`int<class_int>` app_id **)** |const|
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
 .. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`

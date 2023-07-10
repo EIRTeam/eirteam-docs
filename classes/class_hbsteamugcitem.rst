@@ -66,9 +66,11 @@ Methods
 .. table::
    :widths: auto
 
-   +-------------------------+---------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>` | :ref:`has_tag<class_HBSteamUGCItem_method_has_tag>` **(** :ref:`String<class_String>` tag **)** |const| |
-   +-------------------------+---------------------------------------------------------------------------------------------------------+
+   +-------------------------------------+---------------------------------------------------------------------------------------------------------+
+   | :ref:`RefCounted<class_RefCounted>` | :ref:`edit<class_HBSteamUGCItem_method_edit>` **(** **)** |const|                                       |
+   +-------------------------------------+---------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`             | :ref:`has_tag<class_HBSteamUGCItem_method_has_tag>` **(** :ref:`String<class_String>` tag **)** |const| |
+   +-------------------------------------+---------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -371,6 +373,20 @@ Property Descriptions
 
 Method Descriptions
 -------------------
+
+.. _class_HBSteamUGCItem_method_edit:
+
+.. rst-class:: classref-method
+
+:ref:`RefCounted<class_RefCounted>` **edit** **(** **)** |const|
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+
+.. rst-class:: classref-item-separator
+
+----
 
 .. _class_HBSteamUGCItem_method_has_tag:
 

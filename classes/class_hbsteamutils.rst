@@ -16,6 +16,24 @@ HBSteamUtils
 
 	There is currently no description for this class. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
 
+.. rst-class:: classref-reftable-group
+
+Methods
+-------
+
+.. table::
+   :widths: auto
+
+   +-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>` | :ref:`is_in_big_picture_mode<class_HBSteamUtils_method_is_in_big_picture_mode>` **(** **)** |const|                                                                                                                                                                                                                                                                                                                 |
+   +-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>` | :ref:`is_on_steam_deck<class_HBSteamUtils_method_is_on_steam_deck>` **(** **)** |const|                                                                                                                                                                                                                                                                                                                             |
+   +-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>` | :ref:`show_floating_gamepad_text_input<class_HBSteamUtils_method_show_floating_gamepad_text_input>` **(** :ref:`FloatingGamepadTextInputMode<enum_SteamworksConstants_FloatingGamepadTextInputMode>` input_mode, :ref:`Rect2i<class_Rect2i>` text_field_rect **)** |const|                                                                                                                                          |
+   +-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>` | :ref:`show_gamepad_text_input<class_HBSteamUtils_method_show_gamepad_text_input>` **(** :ref:`GamepadTextInputMode<enum_SteamworksConstants_GamepadTextInputMode>` input_mode, :ref:`GamepadTextInputLineMode<enum_SteamworksConstants_GamepadTextInputLineMode>` line_input_mode, :ref:`String<class_String>` description, :ref:`String<class_String>` existing_text, :ref:`int<class_int>` max_text **)** |const| |
+   +-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
 .. rst-class:: classref-section-separator
 
 ----
@@ -48,6 +66,67 @@ Signals
 .. container:: contribute
 
 	There is currently no description for this signal. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Method Descriptions
+-------------------
+
+.. _class_HBSteamUtils_method_is_in_big_picture_mode:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **is_in_big_picture_mode** **(** **)** |const|
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_HBSteamUtils_method_is_on_steam_deck:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **is_on_steam_deck** **(** **)** |const|
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_HBSteamUtils_method_show_floating_gamepad_text_input:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **show_floating_gamepad_text_input** **(** :ref:`FloatingGamepadTextInputMode<enum_SteamworksConstants_FloatingGamepadTextInputMode>` input_mode, :ref:`Rect2i<class_Rect2i>` text_field_rect **)** |const|
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_HBSteamUtils_method_show_gamepad_text_input:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **show_gamepad_text_input** **(** :ref:`GamepadTextInputMode<enum_SteamworksConstants_GamepadTextInputMode>` input_mode, :ref:`GamepadTextInputLineMode<enum_SteamworksConstants_GamepadTextInputLineMode>` line_input_mode, :ref:`String<class_String>` description, :ref:`String<class_String>` existing_text, :ref:`int<class_int>` max_text **)** |const|
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`

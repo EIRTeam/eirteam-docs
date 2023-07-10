@@ -27,6 +27,8 @@ Methods
    +-----------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`HBAuthTicketForWebAPI<class_HBAuthTicketForWebAPI>` | :ref:`get_auth_ticket_for_web_api<class_HBSteamUser_method_get_auth_ticket_for_web_api>` **(** :ref:`String<class_String>` identity **)** |const| |
    +-----------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`HBSteamFriend<class_HBSteamFriend>`                 | :ref:`get_local_user<class_HBSteamUser_method_get_local_user>` **(** **)** |const|                                                                |
+   +-----------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -42,6 +44,20 @@ Method Descriptions
 .. rst-class:: classref-method
 
 :ref:`HBAuthTicketForWebAPI<class_HBAuthTicketForWebAPI>` **get_auth_ticket_for_web_api** **(** :ref:`String<class_String>` identity **)** |const|
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_HBSteamUser_method_get_local_user:
+
+.. rst-class:: classref-method
+
+:ref:`HBSteamFriend<class_HBSteamFriend>` **get_local_user** **(** **)** |const|
 
 .. container:: contribute
 
