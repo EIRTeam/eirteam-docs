@@ -1049,6 +1049,100 @@ enum **Result**:
 
 ----
 
+.. _enum_SteamworksConstants_GamepadTextInputMode:
+
+.. rst-class:: classref-enumeration
+
+enum **GamepadTextInputMode**:
+
+.. _class_SteamworksConstants_constant_GAMEPAD_TEXT_INPUT_MODE_NORMAL:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`GamepadTextInputMode<enum_SteamworksConstants_GamepadTextInputMode>` **GAMEPAD_TEXT_INPUT_MODE_NORMAL** = ``0``
+
+
+
+.. _class_SteamworksConstants_constant_GAMEPAD_TEXT_INPUT_MODE_PASSWORD:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`GamepadTextInputMode<enum_SteamworksConstants_GamepadTextInputMode>` **GAMEPAD_TEXT_INPUT_MODE_PASSWORD** = ``1``
+
+
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _enum_SteamworksConstants_GamepadTextInputLineMode:
+
+.. rst-class:: classref-enumeration
+
+enum **GamepadTextInputLineMode**:
+
+.. _class_SteamworksConstants_constant_GAMEPAD_TEXT_INPUT_LINE_MODE_SINGLE_LINE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`GamepadTextInputLineMode<enum_SteamworksConstants_GamepadTextInputLineMode>` **GAMEPAD_TEXT_INPUT_LINE_MODE_SINGLE_LINE** = ``0``
+
+
+
+.. _class_SteamworksConstants_constant_GAMEPAD_TEXT_INPUT_LINE_MODE_MULTIPLE_LINES:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`GamepadTextInputLineMode<enum_SteamworksConstants_GamepadTextInputLineMode>` **GAMEPAD_TEXT_INPUT_LINE_MODE_MULTIPLE_LINES** = ``1``
+
+
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _enum_SteamworksConstants_FloatingGamepadTextInputMode:
+
+.. rst-class:: classref-enumeration
+
+enum **FloatingGamepadTextInputMode**:
+
+.. _class_SteamworksConstants_constant_FLOATING_GAMEPAD_TEXT_INPUT_MODE_MODE_SINGLE_LINE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`FloatingGamepadTextInputMode<enum_SteamworksConstants_FloatingGamepadTextInputMode>` **FLOATING_GAMEPAD_TEXT_INPUT_MODE_MODE_SINGLE_LINE** = ``0``
+
+
+
+.. _class_SteamworksConstants_constant_FLOATING_GAMEPAD_TEXT_INPUT_MODE_MODE_MULTIPLE_LINES:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`FloatingGamepadTextInputMode<enum_SteamworksConstants_FloatingGamepadTextInputMode>` **FLOATING_GAMEPAD_TEXT_INPUT_MODE_MODE_MULTIPLE_LINES** = ``1``
+
+
+
+.. _class_SteamworksConstants_constant_FLOATING_GAMEPAD_TEXT_INPUT_MODE_MODE_EMAIL:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`FloatingGamepadTextInputMode<enum_SteamworksConstants_FloatingGamepadTextInputMode>` **FLOATING_GAMEPAD_TEXT_INPUT_MODE_MODE_EMAIL** = ``2``
+
+
+
+.. _class_SteamworksConstants_constant_FLOATING_GAMEPAD_TEXT_INPUT_MODE_MODE_NUMERIC:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`FloatingGamepadTextInputMode<enum_SteamworksConstants_FloatingGamepadTextInputMode>` **FLOATING_GAMEPAD_TEXT_INPUT_MODE_MODE_NUMERIC** = ``3``
+
+
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _enum_SteamworksConstants_LobbyType:
 
 .. rst-class:: classref-enumeration
@@ -1192,6 +1286,202 @@ enum **LobbyDistanceFilter**:
 .. rst-class:: classref-enumeration-constant
 
 :ref:`LobbyDistanceFilter<enum_SteamworksConstants_LobbyDistanceFilter>` **LOBBY_DISTANCE_FILTER_WORLDWIDE** = ``3``
+
+
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _enum_SteamworksConstants_RemoteStoragePublishedFileVisibility:
+
+.. rst-class:: classref-enumeration
+
+enum **RemoteStoragePublishedFileVisibility**:
+
+.. _class_SteamworksConstants_constant_REMOTE_STORAGE_PUBLISHED_FILE_VISIBILITY_PUBLIC:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`RemoteStoragePublishedFileVisibility<enum_SteamworksConstants_RemoteStoragePublishedFileVisibility>` **REMOTE_STORAGE_PUBLISHED_FILE_VISIBILITY_PUBLIC** = ``0``
+
+
+
+.. _class_SteamworksConstants_constant_REMOTE_STORAGE_PUBLISHED_FILE_VISIBILITY_FRIENDS_ONLY:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`RemoteStoragePublishedFileVisibility<enum_SteamworksConstants_RemoteStoragePublishedFileVisibility>` **REMOTE_STORAGE_PUBLISHED_FILE_VISIBILITY_FRIENDS_ONLY** = ``1``
+
+
+
+.. _class_SteamworksConstants_constant_REMOTE_STORAGE_PUBLISHED_FILE_VISIBILITY_PRIVATE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`RemoteStoragePublishedFileVisibility<enum_SteamworksConstants_RemoteStoragePublishedFileVisibility>` **REMOTE_STORAGE_PUBLISHED_FILE_VISIBILITY_PRIVATE** = ``2``
+
+
+
+.. _class_SteamworksConstants_constant_REMOTE_STORAGE_PUBLISHED_FILE_VISIBILITY_UNLISTED:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`RemoteStoragePublishedFileVisibility<enum_SteamworksConstants_RemoteStoragePublishedFileVisibility>` **REMOTE_STORAGE_PUBLISHED_FILE_VISIBILITY_UNLISTED** = ``3``
+
+
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _enum_SteamworksConstants_WorkshopFileType:
+
+.. rst-class:: classref-enumeration
+
+enum **WorkshopFileType**:
+
+.. _class_SteamworksConstants_constant_WORKSHOP_FILE_TYPE_FIRST:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`WorkshopFileType<enum_SteamworksConstants_WorkshopFileType>` **WORKSHOP_FILE_TYPE_FIRST** = ``0``
+
+
+
+.. _class_SteamworksConstants_constant_WORKSHOP_FILE_TYPE_COMMUNITY:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`WorkshopFileType<enum_SteamworksConstants_WorkshopFileType>` **WORKSHOP_FILE_TYPE_COMMUNITY** = ``0``
+
+
+
+.. _class_SteamworksConstants_constant_WORKSHOP_FILE_TYPE_MICROTRANSACTION:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`WorkshopFileType<enum_SteamworksConstants_WorkshopFileType>` **WORKSHOP_FILE_TYPE_MICROTRANSACTION** = ``1``
+
+
+
+.. _class_SteamworksConstants_constant_WORKSHOP_FILE_TYPE_COLLECTION:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`WorkshopFileType<enum_SteamworksConstants_WorkshopFileType>` **WORKSHOP_FILE_TYPE_COLLECTION** = ``2``
+
+
+
+.. _class_SteamworksConstants_constant_WORKSHOP_FILE_TYPE_ART:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`WorkshopFileType<enum_SteamworksConstants_WorkshopFileType>` **WORKSHOP_FILE_TYPE_ART** = ``3``
+
+
+
+.. _class_SteamworksConstants_constant_WORKSHOP_FILE_TYPE_VIDEO:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`WorkshopFileType<enum_SteamworksConstants_WorkshopFileType>` **WORKSHOP_FILE_TYPE_VIDEO** = ``4``
+
+
+
+.. _class_SteamworksConstants_constant_WORKSHOP_FILE_TYPE_SCREENSHOT:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`WorkshopFileType<enum_SteamworksConstants_WorkshopFileType>` **WORKSHOP_FILE_TYPE_SCREENSHOT** = ``5``
+
+
+
+.. _class_SteamworksConstants_constant_WORKSHOP_FILE_TYPE_GAME:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`WorkshopFileType<enum_SteamworksConstants_WorkshopFileType>` **WORKSHOP_FILE_TYPE_GAME** = ``6``
+
+
+
+.. _class_SteamworksConstants_constant_WORKSHOP_FILE_TYPE_SOFTWARE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`WorkshopFileType<enum_SteamworksConstants_WorkshopFileType>` **WORKSHOP_FILE_TYPE_SOFTWARE** = ``7``
+
+
+
+.. _class_SteamworksConstants_constant_WORKSHOP_FILE_TYPE_CONCEPT:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`WorkshopFileType<enum_SteamworksConstants_WorkshopFileType>` **WORKSHOP_FILE_TYPE_CONCEPT** = ``8``
+
+
+
+.. _class_SteamworksConstants_constant_WORKSHOP_FILE_TYPE_WEB_GUIDE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`WorkshopFileType<enum_SteamworksConstants_WorkshopFileType>` **WORKSHOP_FILE_TYPE_WEB_GUIDE** = ``9``
+
+
+
+.. _class_SteamworksConstants_constant_WORKSHOP_FILE_TYPE_INTEGRATED_GUIDE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`WorkshopFileType<enum_SteamworksConstants_WorkshopFileType>` **WORKSHOP_FILE_TYPE_INTEGRATED_GUIDE** = ``10``
+
+
+
+.. _class_SteamworksConstants_constant_WORKSHOP_FILE_TYPE_MERCH:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`WorkshopFileType<enum_SteamworksConstants_WorkshopFileType>` **WORKSHOP_FILE_TYPE_MERCH** = ``11``
+
+
+
+.. _class_SteamworksConstants_constant_WORKSHOP_FILE_TYPE_CONTROLLER_BINDING:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`WorkshopFileType<enum_SteamworksConstants_WorkshopFileType>` **WORKSHOP_FILE_TYPE_CONTROLLER_BINDING** = ``12``
+
+
+
+.. _class_SteamworksConstants_constant_WORKSHOP_FILE_TYPE_STEAMWORKS_ACCESS_INVITE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`WorkshopFileType<enum_SteamworksConstants_WorkshopFileType>` **WORKSHOP_FILE_TYPE_STEAMWORKS_ACCESS_INVITE** = ``13``
+
+
+
+.. _class_SteamworksConstants_constant_WORKSHOP_FILE_TYPE_STEAM_VIDEO:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`WorkshopFileType<enum_SteamworksConstants_WorkshopFileType>` **WORKSHOP_FILE_TYPE_STEAM_VIDEO** = ``14``
+
+
+
+.. _class_SteamworksConstants_constant_WORKSHOP_FILE_TYPE_GAME_MANAGED_ITEM:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`WorkshopFileType<enum_SteamworksConstants_WorkshopFileType>` **WORKSHOP_FILE_TYPE_GAME_MANAGED_ITEM** = ``15``
+
+
+
+.. _class_SteamworksConstants_constant_WORKSHOP_FILE_TYPE_MAX:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`WorkshopFileType<enum_SteamworksConstants_WorkshopFileType>` **WORKSHOP_FILE_TYPE_MAX** = ``16``
 
 
 
@@ -4754,6 +5044,570 @@ enum **SteamInputGlyphSize**:
 .. rst-class:: classref-enumeration-constant
 
 :ref:`SteamInputGlyphSize<enum_SteamworksConstants_SteamInputGlyphSize>` **STEAM_INPUT_GLYPH_SIZE_COUNT** = ``3``
+
+
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _enum_SteamworksConstants_UGCMatchingUGCType:
+
+.. rst-class:: classref-enumeration
+
+enum **UGCMatchingUGCType**:
+
+.. _class_SteamworksConstants_constant_UGC_MATCHING_UGC_TYPE_ITEMS:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCMatchingUGCType<enum_SteamworksConstants_UGCMatchingUGCType>` **UGC_MATCHING_UGC_TYPE_ITEMS** = ``0``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_MATCHING_UGC_TYPE_ITEMS_MTX:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCMatchingUGCType<enum_SteamworksConstants_UGCMatchingUGCType>` **UGC_MATCHING_UGC_TYPE_ITEMS_MTX** = ``1``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_MATCHING_UGC_TYPE_ITEMS_READY_TO_USE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCMatchingUGCType<enum_SteamworksConstants_UGCMatchingUGCType>` **UGC_MATCHING_UGC_TYPE_ITEMS_READY_TO_USE** = ``2``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_MATCHING_UGC_TYPE_COLLECTIONS:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCMatchingUGCType<enum_SteamworksConstants_UGCMatchingUGCType>` **UGC_MATCHING_UGC_TYPE_COLLECTIONS** = ``3``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_MATCHING_UGC_TYPE_ARTWORK:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCMatchingUGCType<enum_SteamworksConstants_UGCMatchingUGCType>` **UGC_MATCHING_UGC_TYPE_ARTWORK** = ``4``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_MATCHING_UGC_TYPE_VIDEOS:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCMatchingUGCType<enum_SteamworksConstants_UGCMatchingUGCType>` **UGC_MATCHING_UGC_TYPE_VIDEOS** = ``5``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_MATCHING_UGC_TYPE_SCREENSHOTS:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCMatchingUGCType<enum_SteamworksConstants_UGCMatchingUGCType>` **UGC_MATCHING_UGC_TYPE_SCREENSHOTS** = ``6``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_MATCHING_UGC_TYPE_ALL_GUIDES:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCMatchingUGCType<enum_SteamworksConstants_UGCMatchingUGCType>` **UGC_MATCHING_UGC_TYPE_ALL_GUIDES** = ``7``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_MATCHING_UGC_TYPE_WEB_GUIDES:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCMatchingUGCType<enum_SteamworksConstants_UGCMatchingUGCType>` **UGC_MATCHING_UGC_TYPE_WEB_GUIDES** = ``8``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_MATCHING_UGC_TYPE_INTEGRATED_GUIDES:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCMatchingUGCType<enum_SteamworksConstants_UGCMatchingUGCType>` **UGC_MATCHING_UGC_TYPE_INTEGRATED_GUIDES** = ``9``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_MATCHING_UGC_TYPE_USABLE_IN_GAME:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCMatchingUGCType<enum_SteamworksConstants_UGCMatchingUGCType>` **UGC_MATCHING_UGC_TYPE_USABLE_IN_GAME** = ``10``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_MATCHING_UGC_TYPE_CONTROLLER_BINDINGS:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCMatchingUGCType<enum_SteamworksConstants_UGCMatchingUGCType>` **UGC_MATCHING_UGC_TYPE_CONTROLLER_BINDINGS** = ``11``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_MATCHING_UGC_TYPE_GAME_MANAGED_ITEMS:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCMatchingUGCType<enum_SteamworksConstants_UGCMatchingUGCType>` **UGC_MATCHING_UGC_TYPE_GAME_MANAGED_ITEMS** = ``12``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_MATCHING_UGC_TYPE_ALL:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCMatchingUGCType<enum_SteamworksConstants_UGCMatchingUGCType>` **UGC_MATCHING_UGC_TYPE_ALL** = ``-1``
+
+
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _enum_SteamworksConstants_UserUGCList:
+
+.. rst-class:: classref-enumeration
+
+enum **UserUGCList**:
+
+.. _class_SteamworksConstants_constant_USER_UGC_LIST_PUBLISHED:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UserUGCList<enum_SteamworksConstants_UserUGCList>` **USER_UGC_LIST_PUBLISHED** = ``0``
+
+
+
+.. _class_SteamworksConstants_constant_USER_UGC_LIST_VOTED_ON:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UserUGCList<enum_SteamworksConstants_UserUGCList>` **USER_UGC_LIST_VOTED_ON** = ``1``
+
+
+
+.. _class_SteamworksConstants_constant_USER_UGC_LIST_VOTED_UP:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UserUGCList<enum_SteamworksConstants_UserUGCList>` **USER_UGC_LIST_VOTED_UP** = ``2``
+
+
+
+.. _class_SteamworksConstants_constant_USER_UGC_LIST_VOTED_DOWN:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UserUGCList<enum_SteamworksConstants_UserUGCList>` **USER_UGC_LIST_VOTED_DOWN** = ``3``
+
+
+
+.. _class_SteamworksConstants_constant_USER_UGC_LIST_WILL_VOTE_LATER:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UserUGCList<enum_SteamworksConstants_UserUGCList>` **USER_UGC_LIST_WILL_VOTE_LATER** = ``4``
+
+
+
+.. _class_SteamworksConstants_constant_USER_UGC_LIST_FAVORITED:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UserUGCList<enum_SteamworksConstants_UserUGCList>` **USER_UGC_LIST_FAVORITED** = ``5``
+
+
+
+.. _class_SteamworksConstants_constant_USER_UGC_LIST_SUBSCRIBED:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UserUGCList<enum_SteamworksConstants_UserUGCList>` **USER_UGC_LIST_SUBSCRIBED** = ``6``
+
+
+
+.. _class_SteamworksConstants_constant_USER_UGC_LIST_USED_OR_PLAYED:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UserUGCList<enum_SteamworksConstants_UserUGCList>` **USER_UGC_LIST_USED_OR_PLAYED** = ``7``
+
+
+
+.. _class_SteamworksConstants_constant_USER_UGC_LIST_FOLLOWED:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UserUGCList<enum_SteamworksConstants_UserUGCList>` **USER_UGC_LIST_FOLLOWED** = ``8``
+
+
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _enum_SteamworksConstants_UserUGCListSortOrder:
+
+.. rst-class:: classref-enumeration
+
+enum **UserUGCListSortOrder**:
+
+.. _class_SteamworksConstants_constant_USER_UGC_LIST_SORT_ORDER_CREATION_ORDER_DESC:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UserUGCListSortOrder<enum_SteamworksConstants_UserUGCListSortOrder>` **USER_UGC_LIST_SORT_ORDER_CREATION_ORDER_DESC** = ``0``
+
+
+
+.. _class_SteamworksConstants_constant_USER_UGC_LIST_SORT_ORDER_CREATION_ORDER_ASC:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UserUGCListSortOrder<enum_SteamworksConstants_UserUGCListSortOrder>` **USER_UGC_LIST_SORT_ORDER_CREATION_ORDER_ASC** = ``1``
+
+
+
+.. _class_SteamworksConstants_constant_USER_UGC_LIST_SORT_ORDER_TITLE_ASC:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UserUGCListSortOrder<enum_SteamworksConstants_UserUGCListSortOrder>` **USER_UGC_LIST_SORT_ORDER_TITLE_ASC** = ``2``
+
+
+
+.. _class_SteamworksConstants_constant_USER_UGC_LIST_SORT_ORDER_LAST_UPDATED_DESC:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UserUGCListSortOrder<enum_SteamworksConstants_UserUGCListSortOrder>` **USER_UGC_LIST_SORT_ORDER_LAST_UPDATED_DESC** = ``3``
+
+
+
+.. _class_SteamworksConstants_constant_USER_UGC_LIST_SORT_ORDER_SUBSCRIPTION_DATE_DESC:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UserUGCListSortOrder<enum_SteamworksConstants_UserUGCListSortOrder>` **USER_UGC_LIST_SORT_ORDER_SUBSCRIPTION_DATE_DESC** = ``4``
+
+
+
+.. _class_SteamworksConstants_constant_USER_UGC_LIST_SORT_ORDER_VOTE_SCORE_DESC:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UserUGCListSortOrder<enum_SteamworksConstants_UserUGCListSortOrder>` **USER_UGC_LIST_SORT_ORDER_VOTE_SCORE_DESC** = ``5``
+
+
+
+.. _class_SteamworksConstants_constant_USER_UGC_LIST_SORT_ORDER_FOR_MODERATION:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UserUGCListSortOrder<enum_SteamworksConstants_UserUGCListSortOrder>` **USER_UGC_LIST_SORT_ORDER_FOR_MODERATION** = ``6``
+
+
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _enum_SteamworksConstants_UGCQuery:
+
+.. rst-class:: classref-enumeration
+
+enum **UGCQuery**:
+
+.. _class_SteamworksConstants_constant_UGC_QUERY_RANKED_BY_VOTE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCQuery<enum_SteamworksConstants_UGCQuery>` **UGC_QUERY_RANKED_BY_VOTE** = ``0``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_QUERY_RANKED_BY_PUBLICATION_DATE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCQuery<enum_SteamworksConstants_UGCQuery>` **UGC_QUERY_RANKED_BY_PUBLICATION_DATE** = ``1``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_QUERY_ACCEPTED_FOR_GAME_RANKED_BY_ACCEPTANCE_DATE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCQuery<enum_SteamworksConstants_UGCQuery>` **UGC_QUERY_ACCEPTED_FOR_GAME_RANKED_BY_ACCEPTANCE_DATE** = ``2``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_QUERY_RANKED_BY_TREND:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCQuery<enum_SteamworksConstants_UGCQuery>` **UGC_QUERY_RANKED_BY_TREND** = ``3``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_QUERY_FAVORITED_BY_FRIENDS_RANKED_BY_PUBLICATION_DATE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCQuery<enum_SteamworksConstants_UGCQuery>` **UGC_QUERY_FAVORITED_BY_FRIENDS_RANKED_BY_PUBLICATION_DATE** = ``4``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_QUERY_CREATED_BY_FRIENDS_RANKED_BY_PUBLICATION_DATE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCQuery<enum_SteamworksConstants_UGCQuery>` **UGC_QUERY_CREATED_BY_FRIENDS_RANKED_BY_PUBLICATION_DATE** = ``5``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_QUERY_RANKED_BY_NUM_TIMES_REPORTED:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCQuery<enum_SteamworksConstants_UGCQuery>` **UGC_QUERY_RANKED_BY_NUM_TIMES_REPORTED** = ``6``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_QUERY_CREATED_BY_FOLLOWED_USERS_RANKED_BY_PUBLICATION_DATE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCQuery<enum_SteamworksConstants_UGCQuery>` **UGC_QUERY_CREATED_BY_FOLLOWED_USERS_RANKED_BY_PUBLICATION_DATE** = ``7``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_QUERY_NOT_YET_RATED:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCQuery<enum_SteamworksConstants_UGCQuery>` **UGC_QUERY_NOT_YET_RATED** = ``8``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_QUERY_RANKED_BY_TOTAL_VOTES_ASC:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCQuery<enum_SteamworksConstants_UGCQuery>` **UGC_QUERY_RANKED_BY_TOTAL_VOTES_ASC** = ``9``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_QUERY_RANKED_BY_VOTES_UP:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCQuery<enum_SteamworksConstants_UGCQuery>` **UGC_QUERY_RANKED_BY_VOTES_UP** = ``10``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_QUERY_RANKED_BY_TEXT_SEARCH:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCQuery<enum_SteamworksConstants_UGCQuery>` **UGC_QUERY_RANKED_BY_TEXT_SEARCH** = ``11``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_QUERY_RANKED_BY_TOTAL_UNIQUE_SUBSCRIPTIONS:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCQuery<enum_SteamworksConstants_UGCQuery>` **UGC_QUERY_RANKED_BY_TOTAL_UNIQUE_SUBSCRIPTIONS** = ``12``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_QUERY_RANKED_BY_PLAYTIME_TREND:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCQuery<enum_SteamworksConstants_UGCQuery>` **UGC_QUERY_RANKED_BY_PLAYTIME_TREND** = ``13``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_QUERY_RANKED_BY_TOTAL_PLAYTIME:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCQuery<enum_SteamworksConstants_UGCQuery>` **UGC_QUERY_RANKED_BY_TOTAL_PLAYTIME** = ``14``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_QUERY_RANKED_BY_AVERAGE_PLAYTIME_TREND:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCQuery<enum_SteamworksConstants_UGCQuery>` **UGC_QUERY_RANKED_BY_AVERAGE_PLAYTIME_TREND** = ``15``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_QUERY_RANKED_BY_LIFETIME_AVERAGE_PLAYTIME:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCQuery<enum_SteamworksConstants_UGCQuery>` **UGC_QUERY_RANKED_BY_LIFETIME_AVERAGE_PLAYTIME** = ``16``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_QUERY_RANKED_BY_PLAYTIME_SESSIONS_TREND:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCQuery<enum_SteamworksConstants_UGCQuery>` **UGC_QUERY_RANKED_BY_PLAYTIME_SESSIONS_TREND** = ``17``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_QUERY_RANKED_BY_LIFETIME_PLAYTIME_SESSIONS:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCQuery<enum_SteamworksConstants_UGCQuery>` **UGC_QUERY_RANKED_BY_LIFETIME_PLAYTIME_SESSIONS** = ``18``
+
+
+
+.. _class_SteamworksConstants_constant_UGC_QUERY_RANKED_BY_LAST_UPDATED_DATE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`UGCQuery<enum_SteamworksConstants_UGCQuery>` **UGC_QUERY_RANKED_BY_LAST_UPDATED_DATE** = ``19``
+
+
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _enum_SteamworksConstants_ItemState:
+
+.. rst-class:: classref-enumeration
+
+enum **ItemState**:
+
+.. _class_SteamworksConstants_constant_ITEM_STATE_NONE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ItemState<enum_SteamworksConstants_ItemState>` **ITEM_STATE_NONE** = ``0``
+
+
+
+.. _class_SteamworksConstants_constant_ITEM_STATE_SUBSCRIBED:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ItemState<enum_SteamworksConstants_ItemState>` **ITEM_STATE_SUBSCRIBED** = ``1``
+
+
+
+.. _class_SteamworksConstants_constant_ITEM_STATE_LEGACY_ITEM:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ItemState<enum_SteamworksConstants_ItemState>` **ITEM_STATE_LEGACY_ITEM** = ``2``
+
+
+
+.. _class_SteamworksConstants_constant_ITEM_STATE_INSTALLED:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ItemState<enum_SteamworksConstants_ItemState>` **ITEM_STATE_INSTALLED** = ``4``
+
+
+
+.. _class_SteamworksConstants_constant_ITEM_STATE_NEEDS_UPDATE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ItemState<enum_SteamworksConstants_ItemState>` **ITEM_STATE_NEEDS_UPDATE** = ``8``
+
+
+
+.. _class_SteamworksConstants_constant_ITEM_STATE_DOWNLOADING:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ItemState<enum_SteamworksConstants_ItemState>` **ITEM_STATE_DOWNLOADING** = ``16``
+
+
+
+.. _class_SteamworksConstants_constant_ITEM_STATE_DOWNLOAD_PENDING:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ItemState<enum_SteamworksConstants_ItemState>` **ITEM_STATE_DOWNLOAD_PENDING** = ``32``
+
+
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _enum_SteamworksConstants_ItemPreviewType:
+
+.. rst-class:: classref-enumeration
+
+enum **ItemPreviewType**:
+
+.. _class_SteamworksConstants_constant_ITEM_PREVIEW_TYPE_IMAGE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ItemPreviewType<enum_SteamworksConstants_ItemPreviewType>` **ITEM_PREVIEW_TYPE_IMAGE** = ``0``
+
+
+
+.. _class_SteamworksConstants_constant_ITEM_PREVIEW_TYPE_YOU_TUBE_VIDEO:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ItemPreviewType<enum_SteamworksConstants_ItemPreviewType>` **ITEM_PREVIEW_TYPE_YOU_TUBE_VIDEO** = ``1``
+
+
+
+.. _class_SteamworksConstants_constant_ITEM_PREVIEW_TYPE_SKETCHFAB:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ItemPreviewType<enum_SteamworksConstants_ItemPreviewType>` **ITEM_PREVIEW_TYPE_SKETCHFAB** = ``2``
+
+
+
+.. _class_SteamworksConstants_constant_ITEM_PREVIEW_TYPE_ENVIRONMENT_MAP_HORIZONTAL_CROSS:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ItemPreviewType<enum_SteamworksConstants_ItemPreviewType>` **ITEM_PREVIEW_TYPE_ENVIRONMENT_MAP_HORIZONTAL_CROSS** = ``3``
+
+
+
+.. _class_SteamworksConstants_constant_ITEM_PREVIEW_TYPE_ENVIRONMENT_MAP_LAT_LONG:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ItemPreviewType<enum_SteamworksConstants_ItemPreviewType>` **ITEM_PREVIEW_TYPE_ENVIRONMENT_MAP_LAT_LONG** = ``4``
+
+
+
+.. _class_SteamworksConstants_constant_ITEM_PREVIEW_TYPE_RESERVED_MAX:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ItemPreviewType<enum_SteamworksConstants_ItemPreviewType>` **ITEM_PREVIEW_TYPE_RESERVED_MAX** = ``255``
 
 
 

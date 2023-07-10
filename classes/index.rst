@@ -22,9 +22,19 @@ Steamworks
     class_hbsteamfriends.rst
     class_hbsteamfriend.rst
     class_hbsteamlobby.rst
+    class_hbsteamapps.rst
+    class_hbsteamugc.rst
+    class_hbsteamugcitem.rst
+    class_hbsteamugcadditionalpreview.rst
+    class_hbsteamugcquery.rst
+    class_hbsteamugcquerypageresult.rst
     class_hblobbylistquery.rst
     class_hbsteammatchmaking.rst
     class_hbsteamnetworking.rst
+    class_hbsteamremotestorage.rst
+    class_hbsteamutils.rst
+    class_hbsteamuser.rst
+    class_hbauthticketforwebapi.rst
     class_steamp2ppacket.rst
     class_steamworksconstants.rst
 
