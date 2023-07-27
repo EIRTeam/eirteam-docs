@@ -14,6 +14,7 @@ You can find the repositories for each module here:
 
 - `EIRTeam.Steamworks <https://github.com/EIRTeam/EIRTeam.Steamworks>`_
 - `EIRTeam.InputGlyphs <https://github.com/EIRTeam/EIRTeam.InputGlyphs>`_
+- `EIRTeam.FFmpeg <https://github.com/EIRTeam/EIRTeam.FFmpeg>`_
 
 Supporting development
 ----------------------
@@ -32,6 +33,14 @@ It helps me pay the bills :P
    :name: sec-steamworks
 
    documentation/steamworks/steamworks_getting_started
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: FFmpeg
+   :name: sec-ffmpeg
+
+   documentation/ffmpeg/ffmpeg_getting_started
 
 .. toctree::
    :hidden:
