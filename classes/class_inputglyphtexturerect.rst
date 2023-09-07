@@ -10,7 +10,7 @@
 InputGlyphTextureRect
 =====================
 
-**Inherits:** :ref:`TextureRect<class_TextureRect>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 .. container:: contribute
 
