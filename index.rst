@@ -63,6 +63,14 @@ It helps me pay the bills :P
 .. toctree::
    :hidden:
    :maxdepth: 1
+   :caption: Swansong
+   :name: sec-swansong
+
+   documentation/swansong/swansong_animation_sheets
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
    :caption: Class reference
    :name: sec-class-ref
 
