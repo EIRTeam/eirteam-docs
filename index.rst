@@ -54,6 +54,15 @@ It helps me pay the bills :P
 .. toctree::
    :hidden:
    :maxdepth: 1
+   :caption: Project Heartbeat
+   :name: sec-ph
+
+   documentation/project_heartbeat/ph_getting_started
+   documentation/project_heartbeat/ph_building
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
    :caption: Class reference
    :name: sec-class-ref
 
