@@ -77,6 +77,8 @@ the art melee weaponry and a limited amount of low firing rate handguns that are
 The equipment used on Aurora's mission will be makeshift, rudimentary and rugged due to the inability to use stolen weaponry. But will become upgraded throughout the course of the adventure.
 The items will be themed around various weapons used by different warriors throughout history.
 
+Aurora is also able to receive communications from SoL members bidirectionally.
+
 The main target in the game is the *God Box*, a special computerised system that gives unrestricted access to the *Tranquility* system, which the SoL hope to use to disrupt it or even destroy it.
 Throughout the story progression this is the main objective being chased, the ever elusive golden goose.
 
@@ -88,7 +90,7 @@ Gameplay Loop
 A walkthrough of an example game session follows:
 
 After starting the game, the player is faced with a series of options, such as continuing their already saved game, starting a new one, changing the settings and exiting the game.
-After continuing with their mid-game save file the player is dropped off at the *Homestead*, where they can check their progress, chat with other SoP members or start missions.
+After continuing with their mid-game save file the player is dropped off at the *Homestead*, where they can check their progress, chat with other SoL members or start missions.
 
 Once the player choses a mission he will be informed of the location, the conditions and the mission objective(s). The player then choses his equipment and starts the mission.
 
@@ -130,8 +132,8 @@ There are really two sides to *Swansong*, the game itself and the flexible uncon
 fans of videogames who aren't happy with the current status quo of very neutralized and bland storytelling that doesn't attempt risky things.
 
 *Swansong*'s rarity as an independent game of these characteristics, one that tries to tell a mature, semi-beliveable story with a complex parkour system on top of it, something that even
-bigger studios seem to have dropped the ball at is its main uniqueness. It isn't entirely without precedent however, as other censorship-resistant titles like *Little Witch Nobeta*,
-*The Coffin of Andy and Leyley* and, until recently, *Skullgirls* have achieved good levels of popularity without breaking the bank in terms of budget and are loved by a small but very dedicated
+bigger studios seem to have dropped the ball at is its main uniqueness. It isn't entirely without precedent however, as other titles that challenge the status quo like *Manhunt*,
+*Postal 2* and *Wolfenstein* have achieved good levels of popularity without breaking the bank in terms of budget and are loved by a small but very dedicated
 playerbase, this is a double-edged sword as such playerbase also tends to be very critical, so it's important to deliver a good product to them.
 
 Development
