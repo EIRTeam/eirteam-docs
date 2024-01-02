@@ -62,11 +62,12 @@ It helps me pay the bills :P
 
 .. toctree::
    :hidden:
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Swansong
    :name: sec-swansong
 
    documentation/swansong/swansong_animation_sheets
+   documentation/swansong/swansong_pitch
 
 .. toctree::
    :hidden:
