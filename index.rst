@@ -59,6 +59,7 @@ It helps me pay the bills :P
 
    documentation/project_heartbeat/ph_getting_started
    documentation/project_heartbeat/ph_building
+   documentation/project_heartbeat/ph_challenges_proposal
 
 .. toctree::
    :hidden:
