@@ -124,20 +124,24 @@ ACTION_BITFIELD: uint8
      - SLIDE_LEFT
    * - 0x20
      - SLIDE_RIGHT
+   * - 0x40
+     - HEART_NOTE
 
-* Event type: uint8
+* Event type: EVENT_TYPE
 * Event game timestamp, in microseconds: int64
-* Action: Replay action bitfield
+* Action: ACTION_BITFIELD
     Main action for this event
-* Actions: Replay action bitfield
+* Actions: ACTION_BITFIELD
     Actions triggered by this individual hardware press
 * Pressed: uint8
     Whether this is a press or release event
+* Device ID: uint8_t
+    Device that triggered this action, will be the gamepad ID if its a gamepad event, will be 0 if its a keyboard event
 * Event data:
     .. code-block:: cpp
 
         union {
             double joystick_position[2]; // Second value will be 0.0 in case of single axis events
             uint8_t gamepad_button_idx;
-            uint8_t keyboard_key;
+            uint64_t keyboard_key;
         }
