@@ -13,6 +13,55 @@ Downloads
 
 The latest downloads can be found `here <https://github.com/EIRTeam/EIRTeam.FFmpeg/releases>`__.
 
+Build
+-----
+
+You can build the extension yourself by cloning the `repository <https://github.com/EIRTeam/EIRTeam.FFmpeg>`__ and running ``./build.sh``.
+The following parameters can be passed in order:
+
+.. list-table:: Settings
+   :header-rows: 1
+
+   * - 
+     - Setting
+     - Default Value
+     - Description
+   * - 1
+     - ``TARGET``
+     - all
+     - What kind of build to perform. Can be editor, template_release, template_debug, or all to perform all three other kinds
+   * - 2
+     - ``PLATFORM``
+     - linux
+     - What OS to build for
+   * - 3
+     - ``SCONS_VERSION``
+     - 4.4.0
+     - Which version of `SCons <https://scons.org/>`__ to use
+   * - 4
+     - ``FFMPEG_RELATIVE_PATH``
+     - ffmpeg-master-latest-linux64-lgpl-godot
+     - Where ffmpeg will be installed (or if ``SKIP_FFMPEG_IMPORT`` is true, where it already is installed)
+   * - 5
+     - ``FFMPEG_URL_OR_PATH``
+     - `https://github.com/EIRTeam/FFmpeg-Builds/releases/download/latest/${FFMPEG_RELATIVE_PATH}.tar.xz <https://github.com/EIRTeam/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-lgpl-godot.tar.xz>`__
+     - Where an FFMPEG build can be found (ignored if ``SKIP_FFMPEG_IMPORT`` is true)
+   * - 6
+     - ``FFMPEG_TARBALL_PATH``
+     - ffmpeg.tar.xz
+     - Where to download or copy the ffmpeg tarball to (ignored if ``SKIP_FFMPEG_IMPORT`` is true)
+   * - 7
+     - ``SKIP_FFMPEG_IMPORT``
+     - false
+     - Skip downloading/copying and extracting ffmpeg and assume that ``FFMPEG_RELATIVE_PATH`` already has ffmpeg installed to it.
+   * - 8
+     - ``SCONS_FLAGS``
+     - debug_symbols=no
+     - Flags to pass on to the `SCons <https://scons.org/>`__ command
+
+
+
+
 Installation
 ------------
 
